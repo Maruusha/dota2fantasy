@@ -1,0 +1,506 @@
+{
+    "1": {
+        "name": "Anti-Mage",
+        "attr": "agi"
+    },
+    "2": {
+        "name": "Axe",
+        "attr": "str"
+    },
+    "3": {
+        "name": "Bane",
+        "attr": "all"
+    },
+    "4": {
+        "name": "Bloodseeker",
+        "attr": "agi"
+    },
+    "5": {
+        "name": "Crystal Maiden",
+        "attr": "int"
+    },
+    "6": {
+        "name": "Drow Ranger",
+        "attr": "agi"
+    },
+    "7": {
+        "name": "Earthshaker",
+        "attr": "str"
+    },
+    "8": {
+        "name": "Juggernaut",
+        "attr": "agi"
+    },
+    "9": {
+        "name": "Mirana",
+        "attr": "agi"
+    },
+    "10": {
+        "name": "Morphling",
+        "attr": "agi"
+    },
+    "11": {
+        "name": "Shadow Fiend",
+        "attr": "agi"
+    },
+    "12": {
+        "name": "Phantom Lancer",
+        "attr": "agi"
+    },
+    "13": {
+        "name": "Puck",
+        "attr": "int"
+    },
+    "14": {
+        "name": "Pudge",
+        "attr": "str"
+    },
+    "15": {
+        "name": "Razor",
+        "attr": "agi"
+    },
+    "16": {
+        "name": "Sand King",
+        "attr": "all"
+    },
+    "17": {
+        "name": "Storm Spirit",
+        "attr": "int"
+    },
+    "18": {
+        "name": "Sven",
+        "attr": "str"
+    },
+    "19": {
+        "name": "Tiny",
+        "attr": "str"
+    },
+    "20": {
+        "name": "Vengeful Spirit",
+        "attr": "agi"
+    },
+    "21": {
+        "name": "Windranger",
+        "attr": "all"
+    },
+    "22": {
+        "name": "Zeus",
+        "attr": "int"
+    },
+    "23": {
+        "name": "Kunkka",
+        "attr": "str"
+    },
+    "25": {
+        "name": "Lina",
+        "attr": "int"
+    },
+    "26": {
+        "name": "Lion",
+        "attr": "int"
+    },
+    "27": {
+        "name": "Shadow Shaman",
+        "attr": "int"
+    },
+    "28": {
+        "name": "Slardar",
+        "attr": "str"
+    },
+    "29": {
+        "name": "Tidehunter",
+        "attr": "str"
+    },
+    "30": {
+        "name": "Witch Doctor",
+        "attr": "int"
+    },
+    "31": {
+        "name": "Lich",
+        "attr": "int"
+    },
+    "32": {
+        "name": "Riki",
+        "attr": "agi"
+    },
+    "33": {
+        "name": "Enigma",
+        "attr": "all"
+    },
+    "34": {
+        "name": "Tinker",
+        "attr": "int"
+    },
+    "35": {
+        "name": "Sniper",
+        "attr": "agi"
+    },
+    "36": {
+        "name": "Necrophos",
+        "attr": "int"
+    },
+    "37": {
+        "name": "Warlock",
+        "attr": "int"
+    },
+    "38": {
+        "name": "Beastmaster",
+        "attr": "all"
+    },
+    "39": {
+        "name": "Queen of Pain",
+        "attr": "int"
+    },
+    "40": {
+        "name": "Venomancer",
+        "attr": "all"
+    },
+    "41": {
+        "name": "Faceless Void",
+        "attr": "agi"
+    },
+    "42": {
+        "name": "Wraith King",
+        "attr": "str"
+    },
+    "43": {
+        "name": "Death Prophet",
+        "attr": "all"
+    },
+    "44": {
+        "name": "Phantom Assassin",
+        "attr": "agi"
+    },
+    "45": {
+        "name": "Pugna",
+        "attr": "int"
+    },
+    "46": {
+        "name": "Templar Assassin",
+        "attr": "agi"
+    },
+    "47": {
+        "name": "Viper",
+        "attr": "agi"
+    },
+    "48": {
+        "name": "Luna",
+        "attr": "agi"
+    },
+    "49": {
+        "name": "Dragon Knight",
+        "attr": "str"
+    },
+    "50": {
+        "name": "Dazzle",
+        "attr": "all"
+    },
+    "51": {
+        "name": "Clockwerk",
+        "attr": "str"
+    },
+    "52": {
+        "name": "Leshrac",
+        "attr": "int"
+    },
+    "53": {
+        "name": "Nature's Prophet",
+        "attr": "all"
+    },
+    "54": {
+        "name": "Lifestealer",
+        "attr": "str"
+    },
+    "55": {
+        "name": "Dark Seer",
+        "attr": "int"
+    },
+    "56": {
+        "name": "Clinkz",
+        "attr": "agi"
+    },
+    "57": {
+        "name": "Omniknight",
+        "attr": "str"
+    },
+    "58": {
+        "name": "Enchantress",
+        "attr": "int"
+    },
+    "59": {
+        "name": "Huskar",
+        "attr": "str"
+    },
+    "60": {
+        "name": "Night Stalker",
+        "attr": "str"
+    },
+    "61": {
+        "name": "Broodmother",
+        "attr": "agi"
+    },
+    "62": {
+        "name": "Bounty Hunter",
+        "attr": "agi"
+    },
+    "63": {
+        "name": "Weaver",
+        "attr": "agi"
+    },
+    "64": {
+        "name": "Jakiro",
+        "attr": "int"
+    },
+    "65": {
+        "name": "Batrider",
+        "attr": "all"
+    },
+    "66": {
+        "name": "Chen",
+        "attr": "int"
+    },
+    "67": {
+        "name": "Spectre",
+        "attr": "all"
+    },
+    "68": {
+        "name": "Ancient Apparition",
+        "attr": "int"
+    },
+    "69": {
+        "name": "Doom",
+        "attr": "str"
+    },
+    "70": {
+        "name": "Ursa",
+        "attr": "agi"
+    },
+    "71": {
+        "name": "Spirit Breaker",
+        "attr": "str"
+    },
+    "72": {
+        "name": "Gyrocopter",
+        "attr": "agi"
+    },
+    "73": {
+        "name": "Alchemist",
+        "attr": "str"
+    },
+    "74": {
+        "name": "Invoker",
+        "attr": "int"
+    },
+    "75": {
+        "name": "Silencer",
+        "attr": "int"
+    },
+    "76": {
+        "name": "Outworld Destroyer",
+        "attr": "int"
+    },
+    "77": {
+        "name": "Lycan",
+        "attr": "str"
+    },
+    "78": {
+        "name": "Brewmaster",
+        "attr": "all"
+    },
+    "79": {
+        "name": "Shadow Demon",
+        "attr": "int"
+    },
+    "80": {
+        "name": "Lone Druid",
+        "attr": "agi"
+    },
+    "81": {
+        "name": "Chaos Knight",
+        "attr": "str"
+    },
+    "82": {
+        "name": "Meepo",
+        "attr": "agi"
+    },
+    "83": {
+        "name": "Treant Protector",
+        "attr": "str"
+    },
+    "84": {
+        "name": "Ogre Magi",
+        "attr": "str"
+    },
+    "85": {
+        "name": "Undying",
+        "attr": "str"
+    },
+    "86": {
+        "name": "Rubick",
+        "attr": "int"
+    },
+    "87": {
+        "name": "Disruptor",
+        "attr": "int"
+    },
+    "88": {
+        "name": "Nyx Assassin",
+        "attr": "all"
+    },
+    "89": {
+        "name": "Naga Siren",
+        "attr": "agi"
+    },
+    "90": {
+        "name": "Keeper of the Light",
+        "attr": "int"
+    },
+    "91": {
+        "name": "Io",
+        "attr": "all"
+    },
+    "92": {
+        "name": "Visage",
+        "attr": "all"
+    },
+    "93": {
+        "name": "Slark",
+        "attr": "agi"
+    },
+    "94": {
+        "name": "Medusa",
+        "attr": "agi"
+    },
+    "95": {
+        "name": "Troll Warlord",
+        "attr": "agi"
+    },
+    "96": {
+        "name": "Centaur Warrunner",
+        "attr": "str"
+    },
+    "97": {
+        "name": "Magnus",
+        "attr": "all"
+    },
+    "98": {
+        "name": "Timbersaw",
+        "attr": "str"
+    },
+    "99": {
+        "name": "Bristleback",
+        "attr": "str"
+    },
+    "100": {
+        "name": "Tusk",
+        "attr": "str"
+    },
+    "101": {
+        "name": "Skywrath Mage",
+        "attr": "int"
+    },
+    "102": {
+        "name": "Abaddon",
+        "attr": "all"
+    },
+    "103": {
+        "name": "Elder Titan",
+        "attr": "str"
+    },
+    "104": {
+        "name": "Legion Commander",
+        "attr": "str"
+    },
+    "105": {
+        "name": "Techies",
+        "attr": "all"
+    },
+    "106": {
+        "name": "Ember Spirit",
+        "attr": "agi"
+    },
+    "107": {
+        "name": "Earth Spirit",
+        "attr": "str"
+    },
+    "108": {
+        "name": "Underlord",
+        "attr": "str"
+    },
+    "109": {
+        "name": "Terrorblade",
+        "attr": "agi"
+    },
+    "110": {
+        "name": "Phoenix",
+        "attr": "str"
+    },
+    "111": {
+        "name": "Oracle",
+        "attr": "int"
+    },
+    "112": {
+        "name": "Winter Wyvern",
+        "attr": "int"
+    },
+    "113": {
+        "name": "Arc Warden",
+        "attr": "all"
+    },
+    "114": {
+        "name": "Monkey King",
+        "attr": "agi"
+    },
+    "119": {
+        "name": "Dark Willow",
+        "attr": "int"
+    },
+    "120": {
+        "name": "Pangolier",
+        "attr": "all"
+    },
+    "121": {
+        "name": "Grimstroke",
+        "attr": "int"
+    },
+    "123": {
+        "name": "Hoodwink",
+        "attr": "agi"
+    },
+    "126": {
+        "name": "Void Spirit",
+        "attr": "all"
+    },
+    "128": {
+        "name": "Snapfire",
+        "attr": "all"
+    },
+    "129": {
+        "name": "Mars",
+        "attr": "str"
+    },
+    "131": {
+        "name": "Ringmaster",
+        "attr": "int"
+    },
+    "135": {
+        "name": "Dawnbreaker",
+        "attr": "str"
+    },
+    "136": {
+        "name": "Marci",
+        "attr": "all"
+    },
+    "137": {
+        "name": "Primal Beast",
+        "attr": "str"
+    },
+    "138": {
+        "name": "Muerta",
+        "attr": "int"
+    },
+    "145": {
+        "name": "Kez",
+        "attr": "agi"
+    }
+}
