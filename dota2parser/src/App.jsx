@@ -60,7 +60,7 @@ function App() {
             <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" className="h-14" />
           </a>
           <a href="https://github.com/bydoodle/dota2fantasy" target="_blank" rel="noopener noreferrer">
-            <img src="/github-mark-white.png" className="h-14" alt="" />
+            <img src="github-mark-white.png" className="h-14" alt="" />
           </a>
         </header>
         <section className='w-full flex flex-col gap-4'>
