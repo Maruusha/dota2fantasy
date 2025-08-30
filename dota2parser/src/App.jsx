@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import data from './../../players_stat.json';
 import heroes from './../../heroes.json';
 import leagues from './../../leagues.json';
@@ -57,9 +55,12 @@ function App() {
   return (
     <>
       <div className='p-40 relative w-full bg-gray-950 min-h-screen'>
-        <header className='flex justify-between absolute top-0 h-36 items-center'>
+        <header className='flex justify-between absolute top-0 left-0 h-36 items-center w-full px-40'>
           <a href="https://buymeacoffee.com/nineteenqq" target="_blank" rel="noopener noreferrer">
             <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" className="h-14" />
+          </a>
+          <a href="https://github.com/bydoodle/dota2fantasy" target="_blank" rel="noopener noreferrer">
+            <img src="/github-mark-white.png" className="h-14" alt="" />
           </a>
         </header>
         <section className='w-full flex flex-col gap-4'>
