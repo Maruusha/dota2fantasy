@@ -99,12 +99,3 @@ Then install the required Python packages and run the corresponding parser scrip
 This version was created for TI2025 and is no longer actively developed.
 
 The project has since been redesigned and rebuilt for the next iteration.
-
----
-
-### Dota Fantasy
-
-Built as a side project for the Dota 2 community.
-
-**Previous version:** TI2025
-**Current version:** 2026
