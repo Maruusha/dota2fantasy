@@ -67,12 +67,15 @@ output_rows = []
 for row in rows:
     output_row = {
         "matchID": row["matchID"],
+        "seriesID": row["seriesID"],
         "Versus": normalize_versus(row["Versus"]),
         "Game_number": int(row["Game_number"]),
         "gametime": int(row["gametime"]),
         "isLastGame": int(row["isLastGame"]),
         "playerID": row["playerID"],
         "playerName": row["playerName"],
+        "teamID": row["teamID"],
+        "teamName": row["teamName"],
         "position": row["position"],
         "heroID": row["heroID"],
         "heroName": row["heroName"],
@@ -88,7 +91,7 @@ output_rows.sort(key=lambda r: (
     POSITION_ORDER.get(r["position"], 99),
 ))
 
-fieldnames = ["matchID", "Versus", "Game_number", "gametime", "isLastGame", "playerID", "playerName", "position", "heroID", "heroName"] + STAT_COLUMNS + ["date"]
+fieldnames = ["matchID", "seriesID", "Versus", "Game_number", "gametime", "isLastGame", "playerID", "playerName", "teamID", "teamName", "position", "heroID", "heroName"] + STAT_COLUMNS + ["date"]
 
 with open(OUTPUT_FILE, "w", encoding="utf-8", newline="") as f:
     writer = csv.DictWriter(f, fieldnames=fieldnames)

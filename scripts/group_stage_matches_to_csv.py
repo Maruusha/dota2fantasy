@@ -118,10 +118,13 @@ for match in matches:
     dire_name = match.get("dire_name") or (match.get("dire_team") or {}).get("name", "")
     versus = f"{radiant_name} vs {dire_name}"
     date_str = datetime.fromtimestamp(match.get("start_time", 0), tz=timezone.utc).strftime("%d/%m/%Y")
+    series_id = match.get("series_id") or f"single_{match_id}"
 
     for player in match.get("players", []):
+        is_radiant = player.get("isRadiant")
         row = {
             "matchID": match_id,
+            "seriesID": series_id,
             "Versus": versus,
             "Game_number": game_number_by_match[match_id],
             "gametime": match.get("duration", 0),
@@ -129,6 +132,8 @@ for match in matches:
             "isLastGame": is_last_game_by_match[match_id],
             "playerID": player.get("account_id", ""),
             "playerName": player.get("name") or player.get("personaname", ""),
+            "teamID": match.get("radiant_team_id") if is_radiant else match.get("dire_team_id"),
+            "teamName": radiant_name if is_radiant else dire_name,
             "position": POSITION_BUCKETS.get(player.get("position_est"), ""),
             "heroID": player.get("hero_id"),
             "heroName": heroes_data.get(str(player.get("hero_id")), {}).get("name", ""),
@@ -138,7 +143,7 @@ for match in matches:
         row["date"] = date_str
         rows.append(row)
 
-fieldnames = ["matchID", "Versus", "Game_number", "gametime", "first_blood_time", "isLastGame", "playerID", "playerName", "position", "heroID", "heroName"] + list(CATEGORY_COLUMNS.values()) + STAT_COLUMNS + ["date"]
+fieldnames = ["matchID", "seriesID", "Versus", "Game_number", "gametime", "first_blood_time", "isLastGame", "playerID", "playerName", "teamID", "teamName", "position", "heroID", "heroName"] + list(CATEGORY_COLUMNS.values()) + STAT_COLUMNS + ["date"]
 
 with open(OUTPUT_FILE, "w", encoding="utf-8", newline="") as f:
     writer = csv.DictWriter(f, fieldnames=fieldnames)
