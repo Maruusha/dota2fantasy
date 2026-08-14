@@ -25,4 +25,5 @@ dist-ssr
 .env
 
 docs
-data
+# Generated match payloads (kept locally, never committed)
+/data/group_stage/matches/
