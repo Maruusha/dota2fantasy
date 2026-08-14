@@ -1,0 +1,227 @@
+{
+  "Crimson": [
+    "Axe",
+    "Bloodseeker",
+    "Shadow Fiend",
+    "Pudge",
+    "Sven",
+    "Lina",
+    "Sniper",
+    "Warlock",
+    "Beastmaster",
+    "Dragon Knight",
+    "Clockwerk",
+    "Broodmother",
+    "Jakiro",
+    "Batrider",
+    "Doom",
+    "Lycan",
+    "Lycan", // this should be brew master
+    "Shadow Demon",
+    "Chaos Knight",
+    "Terrorblade",// this should be nyx
+    "Terrorblade", // this should be disruptor 
+    "Alchemist", // this should be troll
+    "Legion Commander",
+    "Axe",// this should be ember
+    "Phoenix",
+    "Pangolier",
+    "Mars",
+    "Invoker", // this should be  snapfire
+    "Primal Beast",
+    "Ringmaster"
+  ],
+  "Cerulean": [
+    "Crystal Maiden",
+    "Mirana",
+    "Morphling",
+    "Phantom Lancer",
+    "Puck",
+    "Razor",
+    "Storm Spirit",
+    "Sven",
+    "Phantom Assassin", // this should be VS
+    "Zeus",
+    "Lich",
+    "Queen of Pain",
+    "Terrorblade",// this should be luna
+    "Leshrac",
+    "Kunkka",// this should be kuskar
+    "Night Stalker",
+    "Weaver",
+    "Jakiro",
+    "Ancient Apparition",
+    "Spirit Breaker",
+    "Ogre Magi",
+    "Io",
+    "Visage",
+    "Abaddon",
+    "Oracle",
+    "Tiny",// this should be WW
+    "Arc Warden",
+    "Muerta",
+    "Kez"
+  ],
+  "Emerald": [
+    "Windranger",
+    "Tidehunter",
+    "Slardar",// this should be Necro
+    "Venomancer",
+    "Viper",// this should be Warthkking
+    "Phantom Assassin",
+    "Pugna",
+    "Viper",
+    "Nature's Prophet",
+    "Enchantress",
+    "Outworld Destroyer",
+    "Treant Protector",
+    "Terrorblade",// this should be undying
+    "Terrorblade",// this should be rubick
+    "Naga Siren",
+    "Medusa",
+    "Earth Spirit",
+    "Underlord",
+    "Monkey King",
+    "Dark Willow",
+    "Hoodwink",
+    "Muerta",
+    "Largo"
+  ],
+  "Royal": [
+    "Anti-Mage",
+    "Terrorblade",// this should be Bane
+    "Drow Ranger",
+    "Terrorblade",// this should be Lion
+    "Slardar",
+    "Terrorblade",// this should be WD
+    "Riki",
+    "Enigma",
+    "Faceless Void",
+    "Templar Assassin",
+    "Terrorblade",// this should be dazzle
+    "Dark Seer",
+    "Spectre",
+    "Terrorblade",// this should be ursa
+    "Silencer",
+    "Earth Spirit",// this should be timber
+    "Abaddon",
+    "Terrorblade",
+    "Dark Willow",
+    "Void Spirit"
+  ],
+  "Golden": [
+    "Shadow Shaman",
+    "Tinker",
+    "Terrorblade",// this should be clinkz
+    "Bounty Hunter",
+    "Batrider",
+    "Earth Spirit",// this should be chen
+    "Terrorblade",// this should be gyro
+    "Alchemist",
+    "Terrorblade",// this should be rubick
+    "Earth Spirit",// this should be kotl
+    "Bristleback",
+    "Earth Spirit",// this should be elder titan
+    "Phoenix",
+    "Terrorblade",// this should be techies
+    "Dawnbreaker",
+    "Ringmaster",
+    "Earthshaker",
+    "Sand King",
+    "Tiny",
+    "Earth Spirit",// this should be lonedruild
+    "Treant Protector",
+    "Centaur Warrunner",
+    "Magnus",
+    "Primal Beast",
+    "Largo"
+  ],
+  "Elemental": [
+    "Morphling",
+    "Kunkka",
+    "Slardar",
+    "Tidehunter",
+    "Naga Siren",
+    "Terrorblade",// this should be slark
+    "Lina",
+    "Dragon Knight",
+    "Terrorblade",// this should be clinkz
+    "Kunkka",// this should be huskar
+    "Jakiro",
+    "Batrider",
+    "Doom",
+    "Kunkka",// this should be invoker
+    "Axe",// this should be brew
+    "Ogre Magi",
+    "Axe",// this should be ember
+    "Phoenix",
+    "Terrorblade",// this should be techies
+    "Dawnbreaker",
+    "Crystal Maiden",
+    "Drow Ranger",
+    "Lich",
+    "Ancient Apparition",
+    "Terrorblade",// this should be tusk
+    "Tiny"// this should be winter wyern
+  ],
+  "Otherworldly": [
+    "Pudge",
+    "Phantom Assassin",// this should be VS
+    "Kunkka",
+    "Lich",
+    "Slardar",// this should be necro
+    "Viper",// this should be warthking
+    "Death Prophet",
+    "Pugna",
+    "Earth Spirit",// this should be LS
+    "Terrorblade",// this should be clinkz
+    "Kunkka",// this should be huskar
+    "Spectre",
+    "Shadow Fiend",// this should be undying
+    "Axe",// this should be grim
+    "Muerta",
+    "Shadow Fiend",
+    "Terrorblade",// this should be lion
+    "Queen of Pain",
+    "Doom",
+    "Shadow Demon",
+    "Terrorblade",
+    "Underlord",
+    "Storm Spirit",
+    "Axe",// this should be ember
+    "Earth Spirit",
+    "Void Spirit"
+  ],
+  "Heroic": [
+    "Bloodseeker",
+    "Crystal Maiden",
+    "Drow Ranger",
+    "Windranger",
+    "Terrorblade",// this should be lion
+    "Sniper",
+    "Warlock",
+    "Phantom Assassin",
+    "Pugna",
+    "Nature's Prophet",
+    "Omniknight",
+    "Batrider",
+    "Kunkka",// this should be invoker
+    "Shadow Demon",
+    "Terrorblade",// this should be rubick
+    "Abaddon",
+    "Oracle",
+    "Arc Warden",
+    "Monkey King",
+    "Marci",
+    "Muerta",
+    "Earth Spirit",// this should be jugger
+    "Sven",
+    "Shadow Shaman",
+    "Tinker",
+    "Clockwerk",
+    "Bounty Hunter",
+    "Terrorblade",// this should be gyro
+    "Chaos Knight",
+    "Mars"// this should be grim
+  ]
+}
