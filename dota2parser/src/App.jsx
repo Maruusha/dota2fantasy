@@ -23,6 +23,23 @@ const downloadCsv = async (url, baseName) => {
   URL.revokeObjectURL(link.href);
 };
 
+const SummaryLabel = ({ children, description }) => (
+  <span className='group relative whitespace-nowrap'>
+    <span
+      className='cursor-help border-b border-dotted border-white border-opacity-60 focus:outline-none focus:ring-1 focus:ring-yellow-400'
+      tabIndex={0}
+    >
+      {children}
+    </span>
+    <span
+      role='tooltip'
+      className='invisible absolute bottom-full left-0 z-20 mb-2 w-max max-w-xs rounded-md bg-gray-900 px-3 py-2 text-xs leading-relaxed text-white shadow-lg opacity-0 transition-opacity group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100'
+    >
+      {description}
+    </span>
+  </span>
+);
+
 const multipliers = {
   'kills': 107,
   'deaths': 195,
@@ -153,6 +170,37 @@ const STAT_SCORE_COLUMNS = [
   "tormentor_kills", "firstblood_claimed",
 ];
 
+const toFiniteNumber = (value) => {
+  const numericValue = Number(value);
+  return Number.isFinite(numericValue) ? numericValue : 0;
+};
+
+// Keep one row per team and role. Each stat takes that team's best score
+// across all of its series, so the table is a best-score comparison rather
+// than a list of individual series results.
+const bestStatScoreRows = Object.values(seriesStatScoreRows.reduce((rowsByTeamPosition, row) => {
+  const key = `${row.teamID}|${row.position}`;
+  const current = rowsByTeamPosition[key];
+
+  if (!current) {
+    rowsByTeamPosition[key] = {
+      ...row,
+      ...Object.fromEntries(STAT_SCORE_COLUMNS.map(stat => [stat, toFiniteNumber(row[stat])])),
+    };
+    return rowsByTeamPosition;
+  }
+
+  STAT_SCORE_COLUMNS.forEach(stat => {
+    const candidate = toFiniteNumber(row[stat]);
+    const currentValue = toFiniteNumber(current[stat]);
+    if (candidate > currentValue) {
+      current[stat] = candidate;
+    }
+  });
+
+  return rowsByTeamPosition;
+}, {}));
+
 // Any player in this match died to a Tormentor
 const tormentorMatchIds = new Set(
   totalRows.filter(row => Number(row.tormentor_deaths) > 0).map(row => row.matchID)
@@ -187,7 +235,7 @@ const computePlayerGameScore = (row, statSlots, titleKey, subtitleKey) => {
   statSlots.forEach(({ stat, multiplier }) => {
     if (!stat) return;
     const weight = multipliers[stat] ?? 1;
-    const raw = Number(row[stat]);
+    const raw = toFiniteNumber(row[stat]);
     total += stat === 'deaths'
       ? (1950 - raw * 195) * multiplier
       : raw * weight * multiplier;
@@ -292,9 +340,10 @@ function App() {
 const RedStats = ({ info }) => (
   <div className="bg-red-500 bg-opacity-20 py-2 px-4 rounded-lg">
     {["kills","deaths","creep_score","gpm","madstone_collected","tower_kills"].map(stat => (
-      <p key={stat}>
-        <b>Avg. {stat.replace("_"," ")}: </b> {getAvgStat(info,"red",stat)}
-      </p>
+      <div key={stat} className='flex justify-between gap-4'>
+        <span className='capitalize'>{stat.replace("_"," ")}</span>
+        <b className='tabular-nums'>{getAvgStat(info,"red",stat)}</b>
+      </div>
     ))}
   </div>
 );
@@ -302,9 +351,10 @@ const RedStats = ({ info }) => (
 const BlueStats = ({ info }) => (
   <div className="bg-blue-500 bg-opacity-20 py-2 px-4 rounded-lg">
     {["obs_placed","camps_stacked","runes_grabbed","watchers_taken","smokes_used"].map(stat => (
-      <p key={stat}>
-        <b>Avg. {stat.replace("_"," ")}: </b> {getAvgStat(info,"blue",stat)}
-      </p>
+      <div key={stat} className='flex justify-between gap-4'>
+        <span className='capitalize'>{stat.replace("_"," ")}</span>
+        <b className='tabular-nums'>{getAvgStat(info,"blue",stat)}</b>
+      </div>
     ))}
   </div>
 );
@@ -312,9 +362,10 @@ const BlueStats = ({ info }) => (
 const GreenStats = ({ info }) => (
   <div className="bg-green-500 bg-opacity-20 py-2 px-4 rounded-lg">
     {["roshan_kills","teamfight_participation","stuns","tormentor_kills","courier_kills","firstblood"].map(stat => (
-      <p key={stat}>
-        <b>Avg. {stat.replace("_"," ")}: </b> {getAvgStat(info,"green",stat)}
-      </p>
+      <div key={stat} className='flex justify-between gap-4'>
+        <span className='capitalize'>{stat.replace("_"," ")}</span>
+        <b className='tabular-nums'>{getAvgStat(info,"green",stat)}</b>
+      </div>
     ))}
   </div>
 );
@@ -370,8 +421,8 @@ const getAvgForSort = (info, statKey) => {
 
   const [selectedOption, setSelectedOption] = useState([null, null, null, null, null, null, null, null, null]);
   const [selectedMultiplier, setSelectedMultiplier] = useState([1, 1, 1, 1, 1, 1, 1, 1, 1]);
-  const [selectedTitle, setSelectedTitle] = useState([null, null, null]);
-  const [selectedSubtitle, setSelectedSubtitle] = useState([null, null, null]);
+  const [selectedTitle, setSelectedTitle] = useState('');
+  const [selectedSubtitle, setSelectedSubtitle] = useState('');
 
   const [selectedOptionExtended, setSelectedOptionExtended] = useState([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
   const [selectedMultiplierExtended, setSelectedMultiplierExtended] = useState([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
@@ -470,33 +521,43 @@ const getAvgForSort = (info, statKey) => {
           </div>
         )}
         <section className='w-full flex flex-col gap-4 items-center'>
-          <h2 className='text-white font-bold text-5xl'>We are dedicated to TI 2026</h2>
+          <h2 className='text-white font-bold text-5xl'>The international 2026 Fantasy</h2>
           <div className='text-white flex w-full justify-between gap-4'>
             {Object.entries(leagues).map(([league, data]) => (
               <div key={data.name} className='bg-gradient-to-b from-transparent from-20% rounded-md to-purple-900 p-4 flex flex-col w-full'>
                 <span className='text-lg'>{data.short_name}</span>
                 <div className='flex w-full mt-4'>
-                  <span className='whitespace-nowrap'>Total matches parsed:</span>
+                  <SummaryLabel description='Number of matches processed and included in the current data.'>
+                    Total matches parsed:
+                  </SummaryLabel>
                   <div className='w-full h-[1px] bg-white self-end mb-1 bg-opacity-30'></div>
                   <b className='ml-auto'>{data.total_matches_parsed}</b>
                 </div>
                 <div className='flex w-full'>
-                  <span className='whitespace-nowrap'>the Tormented:</span>
+                  <SummaryLabel description='+23% if any player dies to a Tormentor.'>
+                    the Tormented:
+                  </SummaryLabel>
                   <div className='w-full h-[1px] bg-white self-end mb-1 bg-opacity-30'></div>
                   <b className='ml-auto'>{data.total_deaths_from_torm}</b>
                 </div>
                 <div className='flex w-full'>
-                  <span className='whitespace-nowrap'>the Patient:</span>
+                  <SummaryLabel description='+23% if first blood does not happen until after 10 minutes.'>
+                    the Patient:
+                  </SummaryLabel>
                   <div className='w-full h-[1px] bg-white self-end mb-1 bg-opacity-30'></div>
                   <b className='ml-auto'>{data.firstblood_before_10min}</b>
                 </div>
                 <div className='flex w-full'>
-                  <span className='whitespace-nowrap'>the Flayed Twins Acolyte:</span>
+                  <SummaryLabel description='+9% if any player gets first blood before the starting horn.'>
+                    the Flayed Twins Acolyte:
+                  </SummaryLabel>
                   <div className='w-full h-[1px] bg-white self-end mb-1 bg-opacity-30'></div>
                   <b className='ml-auto'>{data.firstblood_before_horn}</b>
                 </div>
                 <div className='flex w-full'>
-                  <span className='whitespace-nowrap'>the Decisive:</span>
+                  <SummaryLabel description='+24% in games that last less than 25 minutes.'>
+                    the Decisive:
+                  </SummaryLabel>
                   <div className='w-full h-[1px] bg-white self-end mb-1 bg-opacity-30'></div>
                   <b className='ml-auto'>{data['games<25min']}</b>
                 </div>
@@ -520,50 +581,42 @@ const getAvgForSort = (info, statKey) => {
               Main Event
             </button>
           </div>
+          <div className='grid w-full max-w-2xl grid-cols-2 gap-4'>
+            <Select
+              value={selectedTitle}
+              onChange={(e) => setSelectedTitle(e.target.value)}
+              className='p-2 rounded-sm focus:outline-none'
+            >
+              <option value="">Select Prefix for all roles</option>
+              {Object.keys(data.Xm[19719].titles).map((title, idx) => (
+                <option key={`${idx}-${title}`} value={title || ''}>
+                  {titlesInfo[title]['name']} {' - +'}{titlesInfo[title]['percent']}{'%'} {titlesInfo[title]['description']}
+                </option>
+              ))}
+            </Select>
+            <Select
+              value={selectedSubtitle}
+              onChange={(e) => setSelectedSubtitle(e.target.value)}
+              className='p-2 rounded-sm focus:outline-none'
+            >
+              <option value="">Select Suffix for all roles</option>
+              {Object.entries(subtitlesInfo).map(([name, info], idx) => (
+                <option key={`${idx}-${name}`} value={name || ''}>
+                  {info.name} {' - +'}{info.percent}{'%'} {info.description}
+                </option>
+              ))}
+              <option disabled className='text-red-600'>
+                the Cruel - +13% if a player is killed while in their own fountain (NO DATA)
+              </option>
+            </Select>
+          </div>
           <div className='grid grid-cols-3 gap-4'>
-            {Object.keys(activeRolesConfig).map((role, index) => (
+            {Object.keys(activeRolesConfig).map(role => (
               <div
               key={role}
               className='flex flex-col gap-2 p-4 bg-gradient-to-b from-purple-900 rounded-md to-transparent'>
-                <div className='flex justify-between gap-4'>
-                  <div className='w-[40%] flex flex-col mt-6 gap-6'>
-                    <h2 className='text-center text-white text-5xl'>{{0: 'Core', 1: 'Mid', 2: 'Support'}[role]}</h2>
-                    <Select
-                      value={selectedTitle[index] || ''}
-                      onChange={(e) => setSelectedTitle(prev => {
-                        const updated = [...prev];
-                        updated[index] = e.target.value;
-                        return updated;
-                      })}
-                      className='p-1 rounded-sm focus:outline-none'
-                      >
-                        <option value="">Select title</option>
-                        {Object.keys(data.Xm[19719].titles).map((title, idx) => (
-                          <option key={`${idx}-${title}`} value={title || ''}>
-                            {titlesInfo[title]['name']} {' - +'}{titlesInfo[title]['percent']}{'%'} {titlesInfo[title]['description']}
-                          </option>
-                        ))}
-                      </Select>
-                      <Select
-                      value={selectedSubtitle[index] || ''}
-                      onChange={(e) => setSelectedSubtitle(prev => {
-                        const updated = [...prev];
-                        updated[index] = e.target.value;
-                        return updated;
-                      })}
-                      className='p-1 rounded-sm'
-                      >
-                        <option value="">Select subtitle</option>
-                        {Object.entries(subtitlesInfo).map(([name, info], idx) => (
-                          <option key={`${idx}-${name}`} value={name || ''}>
-                            {info.name} {' - +'}{info.percent}{'%'} {info.description}
-                          </option>
-                        ))}
-                        <option disabled className='text-red-600'>
-                          the Cruel - +13% if a player is killed while in their own fountain(NO DATA)
-                        </option>
-                      </Select>
-                  </div>
+                <div className='flex flex-col gap-4'>
+                  <h2 className='text-center text-white text-5xl'>{{0: 'Core', 1: 'Mid', 2: 'Support'}[role]}</h2>
                   <div className='flex flex-col gap-2'>
                   {activeRolesConfig[role].map((color, idx) => (
                     <div
@@ -609,26 +662,37 @@ const getAvgForSort = (info, statKey) => {
                 </div>
                 <div className='flex flex-col items-center'>
                   <h6 className="text-white text-3xl my-4">Best players:</h6>
-                  <ul className='text-white grid grid-flow-col grid-rows-8 grid-cols-2 w-full gap-x-8'>
+                  <ul className='text-white flex flex-col w-full gap-1'>
                     {(() => {
                       const positionLabel = { 0: 'core', 1: 'mid', 2: 'support' }[role];
                       const statSlots = activeRolesConfig[role].map((_, idx) => ({
                         stat: activeSelectedOption[idx + role * activeSlotsPerRole],
                         multiplier: activeSelectedMultiplier[idx + role * activeSlotsPerRole] || 1,
                       }));
-                      const titleKey = selectedTitle[role];
-                      const subtitleKey = selectedSubtitle[role];
+                      const titleKey = selectedTitle;
+                      const subtitleKey = selectedSubtitle;
 
                       const keys = Object.keys(seriesTeamPositionGames).filter(key => key.endsWith(`|${positionLabel}`));
 
-                      return keys
+                      const rankedTeams = keys
                         .map(key => {
                           const { score, playerNames } = computeSeriesRoleScore(key, statSlots, titleKey, subtitleKey);
                           const teamName = Object.values(seriesTeamPositionGames[key])[0][0].teamName;
                           return { key, teamName, playerNames, score };
                         })
-                        .sort((a, b) => b.score - a.score)
-                        .slice(0, 16)
+                        .sort((a, b) => b.score - a.score);
+
+                      const shownTeams = [];
+                      const seenTeamNames = new Set();
+                      rankedTeams.forEach(team => {
+                        if (!seenTeamNames.has(team.teamName)) {
+                          seenTeamNames.add(team.teamName);
+                          shownTeams.push(team);
+                        }
+                      });
+
+                      return shownTeams
+                        .slice(0, 7)
                         .map(({ key, teamName, playerNames, score }) => (
                           <li key={key} className='whitespace-nowrap flex justify-between'>
                             <span>{teamName} ({playerNames.join(' & ')})</span><div className='h-[1px] w-full bg-white bg-opacity-20 self-end mb-1'></div><span>{score.toFixed(2)}</span>
@@ -648,8 +712,8 @@ const getAvgForSort = (info, statKey) => {
           <p>* No data for subtitle 'the Cruel(+13% if a player is killed while in their own fountain)' since death location isn't tracked</p>
         </div>
         <section className='w-full flex flex-col gap-4 items-center py-8'>
-          <h2 className='text-white font-bold text-5xl'>Raw Stat Scores</h2>
-          <h3 className='text-white text-center'>Best-2-of-3 series score per stat, per team role &mdash; no title/subtitle bonus applied. Click a column to sort.</h3>
+          <h2 className='text-white font-bold text-5xl'>Best Stat Scores</h2>
+          <h3 className='text-white text-center'>Highest score for each stat, grouped by team and position &mdash; no title/subtitle bonus applied. Click a column to sort.</h3>
           <div className='flex gap-6 text-white'>
             {['core', 'mid', 'support'].map(pos => (
               <label key={pos} className='flex items-center gap-2 capitalize cursor-pointer'>
@@ -666,7 +730,7 @@ const getAvgForSort = (info, statKey) => {
             <table className='w-full text-white text-sm'>
               <thead>
                 <tr>
-                  <th className='text-left px-2 py-2'>Team</th>
+                  <th className='text-left px-2 py-2'>Team / position</th>
                   {STAT_SCORE_COLUMNS.map(stat => (
                     <th
                       key={stat}
@@ -679,7 +743,7 @@ const getAvgForSort = (info, statKey) => {
                 </tr>
               </thead>
               <tbody>
-                {seriesStatScoreRows
+                {bestStatScoreRows
                   .filter(row => visiblePositions[row.position])
                   .slice()
                   .sort((a, b) => {
@@ -695,11 +759,13 @@ const getAvgForSort = (info, statKey) => {
                       <tr key={`${row.seriesID}-${row.teamID}-${row.position}`} className={idx % 2 === 0 ? 'bg-white bg-opacity-5' : ''}>
                         <td className='px-2 py-2 whitespace-nowrap'>
                           {logo && <img src={logo} alt="" className='h-5 inline-block mr-2 align-middle' />}
-                          <b>{row.players}</b>
+                          <b>{row.teamName}</b>
+                          <span className='ml-2 capitalize text-gray-400'>({row.position})</span>
+                          <span className='ml-2 text-gray-400'>— {row.players}</span>
                         </td>
                         {STAT_SCORE_COLUMNS.map(stat => (
                           <td key={stat} className={`px-2 py-2 whitespace-nowrap ${statSortKey === stat ? 'bg-purple-900 bg-opacity-40' : ''}`}>
-                            {row[stat] === '' ? '-' : Number(row[stat]).toFixed(2)}
+                            {toFiniteNumber(row[stat]).toFixed(2)}
                           </td>
                         ))}
                       </tr>
