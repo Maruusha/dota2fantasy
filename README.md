@@ -1,53 +1,32 @@
-# Dota 2 Fantasy
+# Dota 2 Fantasy 2026
 
-> Legacy version of my Dota 2 Fantasy League project, originally built for **The International 2025**.
+This project is forked from bydoodle/dota2fantasy (https://github.com/bydoodle/dota2fantasy)
 
-This repository contains the data processing and statistics pipeline behind the original version of the project.
-
-The application was built to collect match data, process player performance and generate additional Fantasy League statistics from competitive Dota 2 matches.
+This repository contains the data processing and statistics pipeline behind the original version of the project. The application was built to collect match data, process player performance and generate additional Fantasy League statistics from just The International 2026 matches.
 
 ## ✦ Current version
 
-The original project is no longer the main version.
+The original project is from 2025. I disagree with some processing pipeline, so i decide to rewrite that logic and keep only the React + Vite part with few modifications.
 
 The newer version of the project is available here:
 
-**[Dota Fantasy 2026](https://bydoodle.github.io/dota-fantasy-2026/)**
+[**Dota Fantasy 2026**](https://maruusha.github.io/dota2fantasy/)
 
-This repository is kept as an archive and as a reference for the previous version of the project.
+This repository will get update every year from now on (hopefully).
 
 ## What it does
 
 The project processes competitive Dota 2 match data and calculates a wide range of statistics used by the Fantasy League system.
 
-Among other things, it tracks:
-
-* player performance and role-based statistics
-* kills, deaths, assists and creep score
-* GPM and other gameplay metrics
-* wards, camps, runes, smokes and watchers
-* Roshan, Tormentor and Courier kills
-* teamfight participation and stuns
-* first blood and pick order
-* buybacks and other match events
-* active item usage
-* hero attributes and custom hero categories
-* cosmetic / Arcana related statistics
-* Dota Plus hero mastery
-* various additional Fantasy titles and subtitles
-
-The resulting data is stored locally in JSON files and used by the web application.
+The resulting data is stored locally in CSV files and used by the web application.
 
 ## Data sources
 
 The parser uses data from:
 
-* [OpenDota](https://www.opendota.com/)
-* [STRATZ](https://stratz.com/)
+- [OpenDota](https://www.opendota.com/)
 
-OpenDota is used for match and player statistics, while STRATZ provides additional data that is not available through the standard OpenDota endpoints.
-
-## Project structure
+## Project structure (to-do)
 
 ```text
 .
@@ -68,40 +47,10 @@ OpenDota is used for match and player statistics, while STRATZ provides addition
 └── dota2parser/
 ```
 
-### Main scripts
+### Main scripts (to-do)
 
-`main.py`
-Collects match data, calculates player statistics and updates the stored datasets.
-
-`heroes_parser.py`
-Fetches Dota 2 hero information and generates the local hero dataset.
-
-`generate_heroes_values.py`
-Initializes additional hero attributes used by the Fantasy system.
-
-`items_with_active_abilities.py`
-Fetches item data from STRATZ and generates a list of items with active abilities.
-
-## Running the parser
-
-To collect data yourself, create a `.env` file in the project root:
-
-```env
-STRATZ_TOKEN=your_token
-```
-
-A STRATZ API token can be obtained from:
-
-[STRATZ API](https://stratz.com/api)
-
-Then install the required Python packages and run the corresponding parser script.
-
-> The dataset shipped with this repository is intended for the original project version and should not be treated as a live source of current Dota 2 data.
+`scripts/`Collects match data, calculates player statistics and updates the stored datasets.
 
 ## Status
 
-**Archived / Legacy**
-
-This version was created for TI2025 and is no longer actively developed.
-
-The project has since been redesigned and rebuilt for the next iteration.
+**Ongoing (update data everyday until the event ends)**
