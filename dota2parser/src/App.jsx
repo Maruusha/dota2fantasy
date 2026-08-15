@@ -147,7 +147,7 @@ const subtitlesInfo = {
 // best 2 of up to 3 games (Bo3) and sums them.
 
 const parseCsv = (raw) => {
-  const lines = raw.trim().split('\n');
+  const lines = raw.trim().split(/\r?\n/);
   const headers = lines[0].split(',');
   return lines.slice(1).map(line => {
     const values = line.split(',');
@@ -634,9 +634,9 @@ const getAvgForSort = (info, statKey) => {
                       >
                         <option value="">None</option>
                         {Object.keys(data.Xm[19719].stats[color]).map((stat, idx) => (
-                          <option key={`${idx}-${stat}`} value={stat || ''} className={(stat == 'watchers_taken' || stat == 'madstone_collected') ? 'text-red-600' : ''}>
+                          <option key={`${idx}-${stat}`} value={stat || ''} className={stat === 'watchers_taken' ? 'text-red-600' : ''}>
                             {stat.replace('_', ' ')}
-                            {(stat == 'watchers_taken' || stat == 'madstone_collected') ? '(data is not 100% accurate)' : ''}
+                            {stat === 'watchers_taken' ? '(data is not 100% accurate)' : ''}
                           </option>
                         ))}
                         {color == 'blue' ? (
@@ -708,7 +708,7 @@ const getAvgForSort = (info, statKey) => {
         <div className='w-full text-gray-300 py-16'>
           <p>* All data was taken using <a href="https://docs.opendota.com/" className='underline text-blue-500' target='_blank' rel="noopener noreferrer">opendota.api</a></p>
           <p>* No data for stat 'lotuses grabbed' since it was unable to find this info</p>
-          <p>* Data for 'madstone collected' and 'watchers taken' is not 100% accurate</p>
+          <p>* Data for 'watchers taken' is not 100% accurate</p>
           <p>* No data for subtitle 'the Cruel(+13% if a player is killed while in their own fountain)' since death location isn't tracked</p>
         </div>
         <section className='w-full flex flex-col gap-4 items-center py-8'>
@@ -765,7 +765,7 @@ const getAvgForSort = (info, statKey) => {
                         </td>
                         {STAT_SCORE_COLUMNS.map(stat => (
                           <td key={stat} className={`px-2 py-2 whitespace-nowrap ${statSortKey === stat ? 'bg-purple-900 bg-opacity-40' : ''}`}>
-                            {toFiniteNumber(row[stat]).toFixed(2)}
+                            {toFiniteNumber(row[stat]) === 0 ? '-' : toFiniteNumber(row[stat]).toFixed(2)}
                           </td>
                         ))}
                       </tr>
