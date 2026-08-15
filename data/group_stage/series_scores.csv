@@ -1,10 +1,22 @@
 seriesID,Versus,teamID,teamName,position,games_played,games_counted,series_score
+1130566,Aurora Gaming vs BoomBoys,9467224,Aurora Gaming,core,2,2,20668.27
+1130566,Aurora Gaming vs BoomBoys,9467224,Aurora Gaming,mid,2,2,17587.08
+1130566,Aurora Gaming vs BoomBoys,9467224,Aurora Gaming,support,2,2,20384.88
+1130566,Aurora Gaming vs BoomBoys,8255888,BoomBoys,core,2,2,18219.91
+1130566,Aurora Gaming vs BoomBoys,8255888,BoomBoys,mid,2,2,16522.74
+1130566,Aurora Gaming vs BoomBoys,8255888,BoomBoys,support,2,2,13996.8
 1130047,Aurora Gaming vs GamerLegion,9467224,Aurora Gaming,core,2,2,23340.9
 1130047,Aurora Gaming vs GamerLegion,9467224,Aurora Gaming,mid,2,2,26048.17
 1130047,Aurora Gaming vs GamerLegion,9467224,Aurora Gaming,support,2,2,22356.59
 1130047,Aurora Gaming vs GamerLegion,9964962,GamerLegion,core,2,2,22312.69
 1130047,Aurora Gaming vs GamerLegion,9964962,GamerLegion,mid,2,2,19229.18
 1130047,Aurora Gaming vs GamerLegion,9964962,GamerLegion,support,2,2,22582.67
+1130669,Aurora Gaming vs Team Liquid,9467224,Aurora Gaming,core,3,2,16959.39
+1130669,Aurora Gaming vs Team Liquid,9467224,Aurora Gaming,mid,3,2,19860.15
+1130669,Aurora Gaming vs Team Liquid,9467224,Aurora Gaming,support,3,2,17569.66
+1130669,Aurora Gaming vs Team Liquid,2163,Team Liquid,core,3,2,23353.27
+1130669,Aurora Gaming vs Team Liquid,2163,Team Liquid,mid,3,2,20585.88
+1130669,Aurora Gaming vs Team Liquid,2163,Team Liquid,support,3,2,15613.67
 1130278,Aurora Gaming vs Team Spirit,9467224,Aurora Gaming,core,2,2,18887.77
 1130278,Aurora Gaming vs Team Spirit,9467224,Aurora Gaming,mid,2,2,21220.78
 1130278,Aurora Gaming vs Team Spirit,9467224,Aurora Gaming,support,2,2,17804.0
@@ -35,6 +47,24 @@ seriesID,Versus,teamID,teamName,position,games_played,games_counted,series_score
 1130305,BoomBoys vs TEAM VISION,9572001,TEAM VISION,core,2,2,24883.85
 1130305,BoomBoys vs TEAM VISION,9572001,TEAM VISION,mid,2,2,20813.8
 1130305,BoomBoys vs TEAM VISION,9572001,TEAM VISION,support,2,2,20582.29
+1130641,BoomBoys vs Team Falcons,8255888,BoomBoys,core,3,2,20720.5
+1130641,BoomBoys vs Team Falcons,8255888,BoomBoys,mid,3,2,21529.39
+1130641,BoomBoys vs Team Falcons,8255888,BoomBoys,support,3,2,17971.92
+1130641,BoomBoys vs Team Falcons,9247354,Team Falcons,core,3,2,21904.73
+1130641,BoomBoys vs Team Falcons,9247354,Team Falcons,mid,3,2,20661.73
+1130641,BoomBoys vs Team Falcons,9247354,Team Falcons,support,3,2,18064.99
+1130622,GamerLegion vs OG,9964962,GamerLegion,core,2,2,19825.14
+1130622,GamerLegion vs OG,9964962,GamerLegion,mid,2,2,21227.27
+1130622,GamerLegion vs OG,9964962,GamerLegion,support,2,2,16088.06
+1130622,GamerLegion vs OG,2586976,OG,core,2,2,13380.47
+1130622,GamerLegion vs OG,2586976,OG,mid,2,2,12616.87
+1130622,GamerLegion vs OG,2586976,OG,support,2,2,13997.96
+1130534,GamerLegion vs Team Falcons,9964962,GamerLegion,core,3,2,23095.51
+1130534,GamerLegion vs Team Falcons,9964962,GamerLegion,mid,3,2,23681.16
+1130534,GamerLegion vs Team Falcons,9964962,GamerLegion,support,3,2,18731.06
+1130534,GamerLegion vs Team Falcons,9247354,Team Falcons,core,3,2,26340.95
+1130534,GamerLegion vs Team Falcons,9247354,Team Falcons,mid,3,2,25210.79
+1130534,GamerLegion vs Team Falcons,9247354,Team Falcons,support,3,2,21457.79
 1130317,GamerLegion vs Vici Gaming,9964962,GamerLegion,core,3,2,25822.91
 1130317,GamerLegion vs Vici Gaming,9964962,GamerLegion,mid,3,2,22340.53
 1130317,GamerLegion vs Vici Gaming,9964962,GamerLegion,support,3,2,25737.88
@@ -47,6 +77,12 @@ seriesID,Versus,teamID,teamName,position,games_played,games_counted,series_score
 1130282,GamerLegion vs Xtreme Gaming,8261500,Xtreme Gaming,core,2,2,11581.11
 1130282,GamerLegion vs Xtreme Gaming,8261500,Xtreme Gaming,mid,2,2,11245.27
 1130282,GamerLegion vs Xtreme Gaming,8261500,Xtreme Gaming,support,2,2,15400.1
+1130536,HULIGANI vs OG,10149530,HULIGANI,core,3,2,21228.04
+1130536,HULIGANI vs OG,10149530,HULIGANI,mid,3,2,23581.98
+1130536,HULIGANI vs OG,10149530,HULIGANI,support,3,2,19529.26
+1130536,HULIGANI vs OG,2586976,OG,core,3,2,25600.93
+1130536,HULIGANI vs OG,2586976,OG,mid,3,2,22816.88
+1130536,HULIGANI vs OG,2586976,OG,support,3,2,23330.79
 1130053,HULIGANI vs Team Yandex,10149530,HULIGANI,core,2,2,16217.74
 1130053,HULIGANI vs Team Yandex,10149530,HULIGANI,mid,2,2,14307.64
 1130053,HULIGANI vs Team Yandex,10149530,HULIGANI,support,2,2,13980.9
@@ -77,6 +113,18 @@ seriesID,Versus,teamID,teamName,position,games_played,games_counted,series_score
 1130309,Iron Wing vs Team Falcons,9247354,Team Falcons,core,3,2,23942.06
 1130309,Iron Wing vs Team Falcons,9247354,Team Falcons,mid,3,2,32928.6
 1130309,Iron Wing vs Team Falcons,9247354,Team Falcons,support,3,2,24663.42
+1130564,Iron Wing vs Team Liquid,10150413,Iron Wing,core,3,2,20940.12
+1130564,Iron Wing vs Team Liquid,10150413,Iron Wing,mid,3,2,19469.4
+1130564,Iron Wing vs Team Liquid,10150413,Iron Wing,support,3,2,19284.78
+1130564,Iron Wing vs Team Liquid,2163,Team Liquid,core,3,2,22228.28
+1130564,Iron Wing vs Team Liquid,2163,Team Liquid,mid,3,2,23241.2
+1130564,Iron Wing vs Team Liquid,2163,Team Liquid,support,3,2,20715.86
+1130665,Iron Wing vs Team Yandex,10150413,Iron Wing,core,3,2,21760.7
+1130665,Iron Wing vs Team Yandex,10150413,Iron Wing,mid,3,2,22682.9
+1130665,Iron Wing vs Team Yandex,10150413,Iron Wing,support,3,2,25233.8
+1130665,Iron Wing vs Team Yandex,9823272,Team Yandex,core,3,2,19809.47
+1130665,Iron Wing vs Team Yandex,9823272,Team Yandex,mid,3,2,16960.14
+1130665,Iron Wing vs Team Yandex,9823272,Team Yandex,support,3,2,16974.81
 1130301,LGD Gaming vs Nigma Galaxy,10150538,LGD Gaming,core,2,2,25026.43
 1130301,LGD Gaming vs Nigma Galaxy,10150538,LGD Gaming,mid,2,2,19059.18
 1130301,LGD Gaming vs Nigma Galaxy,10150538,LGD Gaming,support,2,2,22604.29
@@ -95,12 +143,36 @@ seriesID,Versus,teamID,teamName,position,games_played,games_counted,series_score
 1130063,LGD Gaming vs Team Resilience,5017210,Team Resilience,core,3,2,27669.81
 1130063,LGD Gaming vs Team Resilience,5017210,Team Resilience,mid,3,2,28916.74
 1130063,LGD Gaming vs Team Resilience,5017210,Team Resilience,support,3,2,23555.09
+1130625,LGD Gaming vs Vici Gaming,10150538,LGD Gaming,core,2,2,22806.52
+1130625,LGD Gaming vs Vici Gaming,10150538,LGD Gaming,mid,2,2,34804.41
+1130625,LGD Gaming vs Vici Gaming,10150538,LGD Gaming,support,2,2,23732.86
+1130625,LGD Gaming vs Vici Gaming,726228,Vici Gaming,core,2,2,19717.71
+1130625,LGD Gaming vs Vici Gaming,726228,Vici Gaming,mid,2,2,21285.33
+1130625,LGD Gaming vs Vici Gaming,726228,Vici Gaming,support,2,2,18588.38
+1130535,LGD Gaming vs Xtreme Gaming,10150538,LGD Gaming,core,3,2,26032.51
+1130535,LGD Gaming vs Xtreme Gaming,10150538,LGD Gaming,mid,3,2,26778.35
+1130535,LGD Gaming vs Xtreme Gaming,10150538,LGD Gaming,support,3,2,25212.58
+1130535,LGD Gaming vs Xtreme Gaming,8261500,Xtreme Gaming,core,3,2,24059.47
+1130535,LGD Gaming vs Xtreme Gaming,8261500,Xtreme Gaming,mid,3,2,17027.13
+1130535,LGD Gaming vs Xtreme Gaming,8261500,Xtreme Gaming,support,3,2,21754.77
 1130066,Nigma Galaxy vs OG,10136357,Nigma Galaxy ,core,2,2,23694.85
 1130066,Nigma Galaxy vs OG,10136357,Nigma Galaxy ,mid,2,2,30987.85
 1130066,Nigma Galaxy vs OG,10136357,Nigma Galaxy ,support,2,2,25879.64
 1130066,Nigma Galaxy vs OG,2586976,OG,core,2,2,24941.92
 1130066,Nigma Galaxy vs OG,2586976,OG,mid,2,2,21855.88
 1130066,Nigma Galaxy vs OG,2586976,OG,support,2,2,24165.3
+1130710,Nigma Galaxy vs Team Spirit,10136357,Nigma Galaxy ,core,2,2,25186.59
+1130710,Nigma Galaxy vs Team Spirit,10136357,Nigma Galaxy ,mid,2,2,28803.65
+1130710,Nigma Galaxy vs Team Spirit,10136357,Nigma Galaxy ,support,2,2,21670.7
+1130710,Nigma Galaxy vs Team Spirit,7119388,Team Spirit,core,2,2,25074.93
+1130710,Nigma Galaxy vs Team Spirit,7119388,Team Spirit,mid,2,2,24997.22
+1130710,Nigma Galaxy vs Team Spirit,7119388,Team Spirit,support,2,2,19965.62
+1130559,Nigma Galaxy vs Vici Gaming,10136357,Nigma Galaxy ,core,2,2,24631.2
+1130559,Nigma Galaxy vs Vici Gaming,10136357,Nigma Galaxy ,mid,2,2,24522.2
+1130559,Nigma Galaxy vs Vici Gaming,10136357,Nigma Galaxy ,support,2,2,19838.04
+1130559,Nigma Galaxy vs Vici Gaming,726228,Vici Gaming,core,2,2,13816.09
+1130559,Nigma Galaxy vs Vici Gaming,726228,Vici Gaming,mid,2,2,18551.83
+1130559,Nigma Galaxy vs Vici Gaming,726228,Vici Gaming,support,2,2,19985.87
 1130312,OG vs Team Resilience,2586976,OG,core,2,2,13676.3
 1130312,OG vs Team Resilience,2586976,OG,mid,2,2,13950.5
 1130312,OG vs Team Resilience,2586976,OG,support,2,2,17302.87
@@ -119,6 +191,12 @@ seriesID,Versus,teamID,teamName,position,games_played,games_counted,series_score
 1130027,TEAM VISION vs Team Resilience,5017210,Team Resilience,core,3,2,17819.74
 1130027,TEAM VISION vs Team Resilience,5017210,Team Resilience,mid,3,2,15645.81
 1130027,TEAM VISION vs Team Resilience,5017210,Team Resilience,support,3,2,16461.52
+1130567,TEAM VISION vs Team Spirit,9572001,TEAM VISION,core,2,2,25493.19
+1130567,TEAM VISION vs Team Spirit,9572001,TEAM VISION,mid,2,2,23622.61
+1130567,TEAM VISION vs Team Spirit,9572001,TEAM VISION,support,2,2,17367.19
+1130567,TEAM VISION vs Team Spirit,7119388,Team Spirit,core,2,2,18106.71
+1130567,TEAM VISION vs Team Spirit,7119388,Team Spirit,mid,2,2,15333.38
+1130567,TEAM VISION vs Team Spirit,7119388,Team Spirit,support,2,2,16165.93
 1130320,Team Liquid vs Team Spirit,2163,Team Liquid,core,3,2,20875.24
 1130320,Team Liquid vs Team Spirit,2163,Team Liquid,mid,3,2,20792.31
 1130320,Team Liquid vs Team Spirit,2163,Team Liquid,support,3,2,17106.71
@@ -137,6 +215,18 @@ seriesID,Versus,teamID,teamName,position,games_played,games_counted,series_score
 1130045,Team Liquid vs Vici Gaming,726228,Vici Gaming,core,2,2,17441.69
 1130045,Team Liquid vs Vici Gaming,726228,Vici Gaming,mid,2,2,14512.65
 1130045,Team Liquid vs Vici Gaming,726228,Vici Gaming,support,2,2,14616.41
+1130533,Team Resilience vs Team Yandex,5017210,Team Resilience,core,3,2,19906.65
+1130533,Team Resilience vs Team Yandex,5017210,Team Resilience,mid,3,2,21713.73
+1130533,Team Resilience vs Team Yandex,5017210,Team Resilience,support,3,2,18852.92
+1130533,Team Resilience vs Team Yandex,9823272,Team Yandex,core,3,2,21777.2
+1130533,Team Resilience vs Team Yandex,9823272,Team Yandex,mid,3,2,18953.48
+1130533,Team Resilience vs Team Yandex,9823272,Team Yandex,support,3,2,18271.85
+1130619,Team Resilience vs Xtreme Gaming,5017210,Team Resilience,core,2,2,19564.94
+1130619,Team Resilience vs Xtreme Gaming,5017210,Team Resilience,mid,2,2,20571.0
+1130619,Team Resilience vs Xtreme Gaming,5017210,Team Resilience,support,2,2,19330.02
+1130619,Team Resilience vs Xtreme Gaming,8261500,Xtreme Gaming,core,2,2,12844.3
+1130619,Team Resilience vs Xtreme Gaming,8261500,Xtreme Gaming,mid,2,2,12977.32
+1130619,Team Resilience vs Xtreme Gaming,8261500,Xtreme Gaming,support,2,2,15183.25
 1130051,Team Spirit vs Xtreme Gaming,7119388,Team Spirit,core,2,2,24819.14
 1130051,Team Spirit vs Xtreme Gaming,7119388,Team Spirit,mid,2,2,23192.74
 1130051,Team Spirit vs Xtreme Gaming,7119388,Team Spirit,support,2,2,21751.38
