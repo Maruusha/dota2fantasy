@@ -2,7 +2,7 @@ import requests
 import json
 import time
 
-filename = 'heroes.json'
+filename = 'data/heroes.json'
 
 with open(filename, "r", encoding="utf-8") as f:
     heroes_data = json.load(f)

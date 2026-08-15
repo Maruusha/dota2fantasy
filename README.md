@@ -53,12 +53,18 @@ OpenDota is used for match and player statistics, while STRATZ provides addition
 .
 ├── main.py
 ├── heroes_parser.py
-├── generate_heroes_values.py
-├── items_with_active_abilities.py
-├── heroes.json
+├── data/heroes.json
 ├── leagues.json
 ├── players_stat.json
-├── active_items.json
+├── scripts/
+│   ├── crawl_group_stage_matches.py
+│   ├── group_stage_matches_to_csv.py
+│   └── compute_fantasy_score.py
+├── archive/
+│   ├── generate_heroes_values.py
+│   ├── items_with_active_abilities.py
+│   ├── active_items.json
+│   └── leagues.temp.json
 └── dota2parser/
 ```
 
