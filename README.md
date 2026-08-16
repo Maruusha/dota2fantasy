@@ -51,6 +51,10 @@ The parser uses data from:
 
 `scripts/`Collects match data, calculates player statistics and updates the stored datasets.
 
+## TODO
+
+Filter by team
+
 ## Status
 
-**Ongoing (update data everyday until the event ends)**
+Ongoing (update data everyday until the event ends)\*\*
