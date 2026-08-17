@@ -3,10 +3,10 @@
         "name": "The International 2026",
         "short_name": "TI 2026",
         "link": "https://liquipedia.net/dota2/The_International/2026",
-        "total_deaths_from_torm": 4,
+        "total_deaths_from_torm": 6,
         "firstblood_before_10min": 0,
         "firstblood_before_horn": 0,
-        "games<25min": 2,
-        "total_matches_parsed": 97
+        "games<25min": 4,
+        "total_matches_parsed": 109
     }
 }
