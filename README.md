@@ -55,6 +55,10 @@ The parser uses data from:
 
 Filter by team
 
+Suggest by Kams - Average of all stat by 1 position in **Best Stat Scores**
+
+
+
 ## Status
 
-Ongoing (update data everyday until the event ends)\*\*
+**Ongoing (update data everyday until the event ends)**
