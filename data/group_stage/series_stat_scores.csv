@@ -1,10 +1,16 @@
 seriesID,Versus,teamID,teamName,position,players,kills,deaths,creep_score,gpm,madstone_collected,tower_kills,obs_placed,camps_stacked,runes_grabbed,watchers_taken,smokes_used,roshan_kills,teamfight_participation,stuns,courier_kills,tormentor_kills,firstblood_claimed
 1130566,Aurora Gaming vs BoomBoys,9467224,Aurora Gaming,core,Nightfall & Ws`,2140.0,2730.0,2535.0,2982.0,474.5,1760.0,,,,,,1172.0,3087.1,45.67,703.0,879.0,0.0
+1130934,Aurora Gaming vs BoomBoys,9467224,Aurora Gaming,core,Nightfall & Ws`,909.5,2145.0,2967.0,2414.0,403.0,528.0,,,,,,2344.0,2629.65,1993.81,1054.5,439.5,0.0
 1130566,Aurora Gaming vs BoomBoys,9467224,Aurora Gaming,mid,Mikoto,1070.0,3120.0,1503.0,2308.0,221.0,0.0,585.0,702.0,2961.0,588.0,0.0,1172.0,3065.75,291.33,0.0,0.0,0.0
+1130934,Aurora Gaming vs BoomBoys,9467224,Aurora Gaming,mid,Mikoto,2247.0,1755.0,2688.0,2438.0,182.0,704.0,468.0,1170.0,2115.0,147.0,0.0,1172.0,3219.8,1769.04,0.0,879.0,0.0
 1130566,Aurora Gaming vs BoomBoys,9467224,Aurora Gaming,support,Mira & kaori,,,,,,,1696.5,1755.0,916.5,2866.5,1904.5,0.0,2856.72,913.66,1406.0,0.0,967.0
+1130934,Aurora Gaming vs BoomBoys,9467224,Aurora Gaming,support,Mira & kaori,,,,,,,2281.5,1755.0,1339.5,3307.5,2051.0,0.0,3004.31,1076.82,351.5,0.0,1934.0
 1130566,Aurora Gaming vs BoomBoys,8255888,BoomBoys,core,Kiritych~ & MieRo,749.0,2047.5,2071.5,2265.0,409.5,704.0,,,,,,1758.0,2878.58,658.34,351.5,439.5,967.0
+1130934,Aurora Gaming vs BoomBoys,8255888,BoomBoys,core,Kiritych~ & MieRo,1819.0,2242.5,3394.5,3030.0,487.5,1408.0,,,,,,1172.0,3100.07,1217.49,0.0,0.0,0.0
 1130566,Aurora Gaming vs BoomBoys,8255888,BoomBoys,mid,gpk~,642.0,2145.0,1950.0,2012.0,364.0,0.0,468.0,1170.0,2115.0,147.0,0.0,0.0,3588.44,1218.3,703.0,0.0,0.0
+1130934,Aurora Gaming vs BoomBoys,8255888,BoomBoys,mid,gpk~,2033.0,2925.0,2739.0,2544.0,299.0,2464.0,351.0,468.0,1410.0,735.0,0.0,1172.0,3237.3,738.03,703.0,879.0,0.0
 1130566,Aurora Gaming vs BoomBoys,8255888,BoomBoys,support,Save- & Kataomi`,,,,,,,1813.5,1638.0,493.5,2058.0,1465.0,0.0,2565.57,584.23,703.0,0.0,0.0
+1130934,Aurora Gaming vs BoomBoys,8255888,BoomBoys,support,Save- & Kataomi`,,,,,,,2515.5,1053.0,1128.0,2278.5,2344.0,0.0,2638.33,805.67,351.5,0.0,0.0
 1130047,Aurora Gaming vs GamerLegion,9467224,Aurora Gaming,core,Nightfall & Ws`,1819.0,2047.5,3550.5,2851.0,507.0,1936.0,,,,,,2344.0,2479.73,899.17,703.0,879.0,0.0
 1130047,Aurora Gaming vs GamerLegion,9467224,Aurora Gaming,mid,Mikoto,2568.0,3120.0,3762.0,2936.0,507.0,352.0,468.0,936.0,4653.0,294.0,0.0,1172.0,3046.13,652.04,703.0,879.0,0.0
 1130047,Aurora Gaming vs GamerLegion,9467224,Aurora Gaming,support,Mira & kaori,,,,,,,2749.5,1521.0,1198.5,4924.5,2197.5,0.0,2532.4,722.7,2109.0,439.5,0.0
@@ -53,6 +59,12 @@ seriesID,Versus,teamID,teamName,position,players,kills,deaths,creep_score,gpm,ma
 1130641,BoomBoys vs Team Falcons,9247354,Team Falcons,core,skiter & AMMAR_THE_F,1391.0,3022.5,3012.0,3053.0,513.5,2640.0,,,,,,1758.0,3032.01,213.81,351.5,879.0,0.0
 1130641,BoomBoys vs Team Falcons,9247354,Team Falcons,mid,Malr1ne,1177.0,2925.0,2166.0,2396.0,377.0,1056.0,468.0,1638.0,1833.0,441.0,0.0,1172.0,3823.2,795.19,0.0,0.0,1934.0
 1130641,BoomBoys vs Team Falcons,9247354,Team Falcons,support,Sneyking & Cr1t-,,,,,,,2164.5,1404.0,1480.5,2646.0,2197.5,0.0,3085.11,921.67,1054.5,0.0,967.0
+1130950,GamerLegion vs Iron Wing,9964962,GamerLegion,core,Ghost & Fayde,428.0,1365.0,1881.0,1889.0,403.0,528.0,,,,,,0.0,1848.29,470.33,0.0,0.0,0.0
+1130950,GamerLegion vs Iron Wing,9964962,GamerLegion,mid,RCY,963.0,3120.0,1944.0,2218.0,286.0,1056.0,117.0,234.0,1410.0,0.0,0.0,1172.0,2900.08,885.66,703.0,0.0,0.0
+1130950,GamerLegion vs Iron Wing,9964962,GamerLegion,support,Speeed & Bignum,,,,,,,1813.5,1053.0,634.5,1764.0,1758.0,0.0,3027.72,980.58,0.0,0.0,0.0
+1130950,GamerLegion vs Iron Wing,10150413,Iron Wing,core,33 & Pure,1605.0,3120.0,2157.0,2758.0,416.0,2288.0,,,,,,1758.0,2360.74,364.83,351.5,0.0,1934.0
+1130950,GamerLegion vs Iron Wing,10150413,Iron Wing,mid,bzm,2461.0,3510.0,1905.0,2834.0,260.0,1056.0,468.0,468.0,4089.0,441.0,0.0,1172.0,2960.32,424.01,1406.0,1758.0,0.0
+1130950,GamerLegion vs Iron Wing,10150413,Iron Wing,support,Ari & Whitemon,,,,,,,1579.5,1053.0,564.0,1837.5,1465.0,0.0,2219.14,1000.83,351.5,0.0,0.0
 1130622,GamerLegion vs OG,9964962,GamerLegion,core,Ghost & Fayde,1391.0,3412.5,2481.0,2971.0,487.5,1936.0,,,,,,1172.0,2503.96,493.68,351.5,0.0,0.0
 1130622,GamerLegion vs OG,9964962,GamerLegion,mid,RCY,2033.0,3315.0,1530.0,2392.0,78.0,704.0,468.0,1170.0,2538.0,441.0,0.0,0.0,3181.28,739.99,703.0,0.0,1934.0
 1130622,GamerLegion vs OG,9964962,GamerLegion,support,Bignum & Speeed,,,,,,,1638.0,1872.0,564.0,1176.0,1318.5,0.0,2520.48,1228.58,0.0,0.0,0.0
@@ -143,6 +155,12 @@ seriesID,Versus,teamID,teamName,position,players,kills,deaths,creep_score,gpm,ma
 1130063,LGD Gaming vs Team Resilience,5017210,Team Resilience,core,YSR-04E & niu,2407.5,1267.5,5487.0,2843.0,624.0,1584.0,,,,,,3516.0,2809.68,895.13,0.0,1758.0,1934.0
 1130063,LGD Gaming vs Team Resilience,5017210,Team Resilience,mid,Echozz,2889.0,1755.0,4932.0,2838.0,559.0,704.0,351.0,936.0,4230.0,2058.0,293.0,2344.0,3211.12,4187.51,0.0,0.0,0.0
 1130063,LGD Gaming vs Team Resilience,5017210,Team Resilience,support,planet & zzq,,,,,,,3685.5,2457.0,1339.5,4116.0,3223.0,586.0,2820.58,853.01,1054.5,0.0,0.0
+1130974,LGD Gaming vs Team Yandex,10150538,LGD Gaming,core,Yuma & Wisper,1551.5,2340.0,3454.5,2744.0,520.0,704.0,,,,,,586.0,2888.06,792.5,351.5,0.0,967.0
+1130974,LGD Gaming vs Team Yandex,10150538,LGD Gaming,mid,Topson,1926.0,2925.0,3510.0,2810.0,390.0,2816.0,351.0,702.0,2397.0,0.0,0.0,1172.0,3519.18,1094.03,703.0,879.0,0.0
+1130974,LGD Gaming vs Team Yandex,10150538,LGD Gaming,support,Thiolicor & KingJungles,,,,,,,2515.5,3744.0,1410.0,3748.5,2490.5,586.0,2727.88,1467.49,2109.0,0.0,0.0
+1130974,LGD Gaming vs Team Yandex,9823272,Team Yandex,core,医者watson` & DM,1819.0,2925.0,3630.0,3112.0,650.0,1936.0,,,,,,1758.0,3194.85,979.17,351.5,879.0,1934.0
+1130974,LGD Gaming vs Team Yandex,9823272,Team Yandex,mid,CHIRA_JUNIOR,2782.0,2925.0,2907.0,2834.0,338.0,1760.0,351.0,234.0,2256.0,1029.0,0.0,2344.0,3504.6,877.02,703.0,879.0,0.0
+1130974,LGD Gaming vs Team Yandex,9823272,Team Yandex,support,Maladych & Saksa,,,,,,,2691.0,936.0,2256.0,3381.0,2344.0,0.0,2486.05,775.74,5975.5,0.0,0.0
 1130625,LGD Gaming vs Vici Gaming,10150538,LGD Gaming,core,Yuma & Wisper,1712.0,2827.5,4051.5,3088.0,559.0,704.0,,,,,,586.0,2996.19,545.34,0.0,439.5,967.0
 1130625,LGD Gaming vs Vici Gaming,10150538,LGD Gaming,mid,Topson,1498.0,2730.0,3459.0,2986.0,221.0,3168.0,234.0,2106.0,4089.0,588.0,0.0,2344.0,3464.71,1939.7,1406.0,2637.0,1934.0
 1130625,LGD Gaming vs Vici Gaming,10150538,LGD Gaming,support,Thiolicor & KingJungles,,,,,,,2574.0,1989.0,1339.5,4630.5,1904.5,586.0,2897.67,936.68,2460.5,0.0,0.0
@@ -197,6 +215,12 @@ seriesID,Versus,teamID,teamName,position,players,kills,deaths,creep_score,gpm,ma
 1130567,TEAM VISION vs Team Spirit,7119388,Team Spirit,core,Yatoro & Collapse,481.5,2145.0,2908.5,2347.0,526.5,704.0,,,,,,586.0,1784.87,234.34,351.5,1758.0,967.0
 1130567,TEAM VISION vs Team Spirit,7119388,Team Spirit,mid,Larl,963.0,975.0,2352.0,2008.0,286.0,0.0,0.0,468.0,2115.0,588.0,0.0,1172.0,3141.38,1265.0,0.0,0.0,0.0
 1130567,TEAM VISION vs Team Spirit,7119388,Team Spirit,support,rue & not_me,,,,,,,2340.0,2340.0,423.0,2058.0,1904.5,0.0,2525.6,899.83,703.0,0.0,0.0
+1130919,Team Falcons vs Vici Gaming,9247354,Team Falcons,core,skiter & AMMAR_THE_F,1337.5,3510.0,3129.0,2931.0,403.0,2464.0,,,,,,1758.0,2432.32,371.18,351.5,1318.5,0.0
+1130919,Team Falcons vs Vici Gaming,9247354,Team Falcons,mid,Malr1ne,2033.0,2925.0,2601.0,2922.0,351.0,1056.0,468.0,2106.0,4653.0,882.0,293.0,0.0,3083.23,706.99,0.0,0.0,1934.0
+1130919,Team Falcons vs Vici Gaming,9247354,Team Falcons,support,Sneyking & Cr1t-,,,,,,,1930.5,2340.0,634.5,2352.0,1904.5,0.0,2740.65,918.5,703.0,0.0,0.0
+1130919,Team Falcons vs Vici Gaming,726228,Vici Gaming,core,shiro & Bach,321.0,1657.5,2527.5,2196.0,429.0,1056.0,,,,,,1172.0,2687.18,403.0,351.5,439.5,967.0
+1130919,Team Falcons vs Vici Gaming,726228,Vici Gaming,mid,Xm,535.0,1950.0,2421.0,2164.0,520.0,0.0,585.0,468.0,2679.0,735.0,0.0,1172.0,3668.73,416.37,0.0,0.0,0.0
+1130919,Team Falcons vs Vici Gaming,726228,Vici Gaming,support,XinQ & y`,,,,,,,1989.0,702.0,352.5,2572.5,1758.0,0.0,2864.18,287.17,0.0,0.0,0.0
 1130320,Team Liquid vs Team Spirit,2163,Team Liquid,core,Ace ♠ & m1CKe,1444.5,2535.0,3421.5,2804.0,533.0,1760.0,,,,,,1172.0,2340.23,417.67,351.5,439.5,967.0
 1130320,Team Liquid vs Team Spirit,2163,Team Liquid,mid,Nisha,2247.0,2925.0,2832.0,2566.0,390.0,352.0,234.0,1638.0,3384.0,882.0,0.0,0.0,3870.21,1056.67,0.0,0.0,0.0
 1130320,Team Liquid vs Team Spirit,2163,Team Liquid,support,tOfu & Boxi,,,,,,,2632.5,1053.0,705.0,2572.5,2197.5,0.0,2969.82,818.17,1757.5,439.5,967.0
@@ -215,6 +239,12 @@ seriesID,Versus,teamID,teamName,position,players,kills,deaths,creep_score,gpm,ma
 1130045,Team Liquid vs Vici Gaming,726228,Vici Gaming,core,shiro & Bach,1123.5,2437.5,2911.5,2313.0,370.5,1232.0,,,,,,1758.0,2421.36,605.83,351.5,439.5,0.0
 1130045,Team Liquid vs Vici Gaming,726228,Vici Gaming,mid,Xm,428.0,1170.0,2451.0,2022.0,234.0,0.0,468.0,702.0,1692.0,1470.0,0.0,0.0,3568.32,307.33,0.0,0.0,0.0
 1130045,Team Liquid vs Vici Gaming,726228,Vici Gaming,support,XinQ & y`,,,,,,,2340.0,819.0,705.0,2058.0,2490.5,0.0,2336.4,1174.51,0.0,0.0,0.0
+1130941,Team Resilience vs Team Spirit,5017210,Team Resilience,core,YSR-04E & niu,2140.0,2145.0,2709.0,2673.0,513.5,1760.0,,,,,,1758.0,2989.33,643.51,351.5,879.0,967.0
+1130941,Team Resilience vs Team Spirit,5017210,Team Resilience,mid,Echozz,2033.0,2730.0,2448.0,2550.0,325.0,1056.0,351.0,1638.0,3243.0,1323.0,0.0,0.0,3208.48,1388.31,1406.0,0.0,0.0
+1130941,Team Resilience vs Team Spirit,5017210,Team Resilience,support,planet & zzq,,,,,,,2223.0,1404.0,564.0,2719.5,1904.5,0.0,2857.29,494.11,351.5,0.0,0.0
+1130941,Team Resilience vs Team Spirit,7119388,Team Spirit,core,Yatoro & Collapse,1444.5,3412.5,3094.5,2954.0,546.0,2464.0,,,,,,1172.0,2380.34,1046.16,2460.5,439.5,967.0
+1130941,Team Resilience vs Team Spirit,7119388,Team Spirit,mid,Larl,1712.0,2925.0,2277.0,2346.0,299.0,0.0,234.0,936.0,3666.0,882.0,293.0,1172.0,2856.41,1230.66,0.0,0.0,0.0
+1130941,Team Resilience vs Team Spirit,7119388,Team Spirit,support,rue & not_me,,,,,,,2281.5,2223.0,916.5,2278.5,1758.0,586.0,3055.21,821.66,0.0,439.5,967.0
 1130533,Team Resilience vs Team Yandex,5017210,Team Resilience,core,YSR-04E & niu,1391.0,1657.5,2841.0,2384.0,474.5,1584.0,,,,,,1172.0,2656.03,1549.12,351.5,1318.5,0.0
 1130533,Team Resilience vs Team Yandex,5017210,Team Resilience,mid,Echozz,1284.0,3120.0,2202.0,2210.0,325.0,704.0,468.0,936.0,3807.0,1176.0,0.0,1172.0,3442.77,1339.97,703.0,0.0,0.0
 1130533,Team Resilience vs Team Yandex,5017210,Team Resilience,support,planet & zzq,,,,,,,2398.5,1755.0,564.0,2499.0,2051.0,0.0,3064.8,818.04,351.5,0.0,967.0
