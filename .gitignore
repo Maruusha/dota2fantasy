@@ -27,3 +27,4 @@ dist-ssr
 docs
 # Generated match payloads (kept locally, never committed)
 /data/group_stage/matches/
+/data/main_event/matches/
