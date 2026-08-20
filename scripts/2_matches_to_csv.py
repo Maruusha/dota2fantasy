@@ -5,8 +5,8 @@ import os
 from datetime import datetime, timezone
 
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
-MATCHES_DIR = os.path.join(ROOT_DIR, "data", "group_stage", "matches")
-OUTPUT_FILE = os.path.join(ROOT_DIR, "data", "group_stage", "total.csv")
+MATCHES_DIR = os.path.join(ROOT_DIR, "data", "main_event", "matches")
+OUTPUT_FILE = os.path.join(ROOT_DIR, "data", "main_event", "total.csv")
 
 with open(os.path.join(ROOT_DIR, "data", "heroes.json"), "r", encoding="utf-8") as f:
     heroes_data = json.load(f)
