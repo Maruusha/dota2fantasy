@@ -4,7 +4,7 @@ import os
 import time
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
-MATCHES_DIR = os.path.join(DATA_DIR, "group_stage", "matches")
+MATCHES_DIR = os.path.join(DATA_DIR, "main_event", "matches")
 EXISTING_IDS_FILE = os.path.join(DATA_DIR, "match_existed_id.txt")
 
 os.makedirs(MATCHES_DIR, exist_ok=True)
