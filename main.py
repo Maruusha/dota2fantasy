@@ -100,7 +100,7 @@ def addPlayerFields(league_id, player, match_r, pos):
             }
 
 matches_by_league = {league_id: [] for league_id in leagues_ids}
-for filepath in glob.glob(os.path.join("data", "group_stage", "matches", "*.json")):
+for filepath in glob.glob(os.path.join("data", "main_event", "matches", "*.json")):
     with open(filepath, "r", encoding="utf-8") as f:
         cached_match = json.load(f)
     if cached_match.get('leagueid') in matches_by_league:

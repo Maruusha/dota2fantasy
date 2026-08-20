@@ -2,8 +2,8 @@ import csv
 import os
 
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
-INPUT_FILE = os.path.join(ROOT_DIR, "data", "group_stage", "total.csv")
-OUTPUT_FILE = os.path.join(ROOT_DIR, "data", "group_stage", "fantasy_score.csv")
+INPUT_FILE = os.path.join(ROOT_DIR, "data", "main_event", "total.csv")
+OUTPUT_FILE = os.path.join(ROOT_DIR, "data", "main_event", "fantasy_score.csv")
 
 STAT_WEIGHTS = {
     "kills": 107,

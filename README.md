@@ -51,13 +51,15 @@ The parser uses data from:
 
 `scripts/`Collects match data, calculates player statistics and updates the stored datasets.
 
-## TODO
+## TODO (next year)
 
 Filter by team
 
 Suggest by Kams - Average of all stat by 1 position in **Best Stat Scores**
 
+Suggest by Kams - Select players, select X number of best game (by stat of choice), show X heros that player play, border hero icon with the color same as its color (for the prefix, might work with suffix). By me, show how much point gained if select this prefix for these X matches
 
+Auto-loaded your stats with json: You input once, i export you json string, you keep somewhere, when you need to check score again, you paste the json string in (Or CV script to read <span style="color: rgb(8, 8, 9);">stat image - OCR</span>)
 
 ## Status
 
