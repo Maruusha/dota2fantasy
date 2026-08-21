@@ -1,4 +1,10 @@
 seriesID,Versus,teamID,teamName,position,games_played,games_counted,series_score
+1132343,BoomBoys vs Iron Wing,8255888,BoomBoys,core,3,2,22652.5
+1132343,BoomBoys vs Iron Wing,8255888,BoomBoys,mid,3,2,21699.99
+1132343,BoomBoys vs Iron Wing,8255888,BoomBoys,support,3,2,19924.46
+1132343,BoomBoys vs Iron Wing,10150413,Iron Wing,core,3,2,19658.84
+1132343,BoomBoys vs Iron Wing,10150413,Iron Wing,mid,3,2,26709.72
+1132343,BoomBoys vs Iron Wing,10150413,Iron Wing,support,3,2,19082.51
 1132161,BoomBoys vs TEAM VISION,8255888,BoomBoys,core,3,2,22486.9
 1132161,BoomBoys vs TEAM VISION,8255888,BoomBoys,mid,3,2,33926.17
 1132161,BoomBoys vs TEAM VISION,8255888,BoomBoys,support,3,2,21462.38
@@ -23,6 +29,24 @@ single_8955197224,Iron Wing vs Team Spirit,7119388,Team Spirit,support,1,1,9257.
 1132197,Nigma Galaxy vs Team Falcons,9247354,Team Falcons,core,3,2,21799.42
 1132197,Nigma Galaxy vs Team Falcons,9247354,Team Falcons,mid,3,2,22855.77
 1132197,Nigma Galaxy vs Team Falcons,9247354,Team Falcons,support,3,2,24259.01
+1132426,Nigma Galaxy vs Team Yandex,10136357,Nigma Galaxy ,core,3,2,22646.71
+1132426,Nigma Galaxy vs Team Yandex,10136357,Nigma Galaxy ,mid,3,2,24760.28
+1132426,Nigma Galaxy vs Team Yandex,10136357,Nigma Galaxy ,support,3,2,21767.68
+1132426,Nigma Galaxy vs Team Yandex,9823272,Team Yandex,core,3,2,29462.64
+1132426,Nigma Galaxy vs Team Yandex,9823272,Team Yandex,mid,3,2,28390.83
+1132426,Nigma Galaxy vs Team Yandex,9823272,Team Yandex,support,3,2,26611.18
+1132388,TEAM VISION vs Team Spirit,9572001,TEAM VISION,core,3,2,24962.74
+1132388,TEAM VISION vs Team Spirit,9572001,TEAM VISION,mid,3,2,19561.33
+1132388,TEAM VISION vs Team Spirit,9572001,TEAM VISION,support,3,2,21435.52
+1132388,TEAM VISION vs Team Spirit,7119388,Team Spirit,core,3,2,17138.69
+1132388,TEAM VISION vs Team Spirit,7119388,Team Spirit,mid,3,2,16731.83
+1132388,TEAM VISION vs Team Spirit,7119388,Team Spirit,support,3,2,14081.24
+1132374,Team Falcons vs Team Liquid,9247354,Team Falcons,core,3,2,22326.37
+1132374,Team Falcons vs Team Liquid,9247354,Team Falcons,mid,3,2,26166.69
+1132374,Team Falcons vs Team Liquid,9247354,Team Falcons,support,3,2,22556.62
+1132374,Team Falcons vs Team Liquid,2163,Team Liquid,core,3,2,21570.98
+1132374,Team Falcons vs Team Liquid,2163,Team Liquid,mid,3,2,19319.82
+1132374,Team Falcons vs Team Liquid,2163,Team Liquid,support,3,2,18857.34
 1132178,Team Liquid vs Team Yandex,2163,Team Liquid,core,2,2,15473.29
 1132178,Team Liquid vs Team Yandex,2163,Team Liquid,mid,2,2,22242.07
 1132178,Team Liquid vs Team Yandex,2163,Team Liquid,support,2,2,16557.0
