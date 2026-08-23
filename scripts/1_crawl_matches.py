@@ -2,7 +2,7 @@ import requests
 import json
 import os
 import time
-
+# Missing game 2 BoomBoys vs Team Spirit, idk why
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 MATCHES_DIR = os.path.join(DATA_DIR, "main_event", "matches")
 EXISTING_IDS_FILE = os.path.join(DATA_DIR, "match_existed_id.txt")

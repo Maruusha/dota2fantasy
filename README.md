@@ -63,4 +63,10 @@ Auto-loaded your stats with json: You input once, i export you json string, you 
 
 ## Status
 
-**Ongoing (update data everyday until the event ends)**
+**Finished all data of TI26**
+
+Analyze/Visualize data to notebook - todo
+
+update UI - todo
+
+conclusion of this year - todo
