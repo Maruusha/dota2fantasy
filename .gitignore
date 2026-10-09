@@ -26,5 +26,6 @@ dist-ssr
 
 docs
 
-# Local tournament data (kept locally, never committed)
-/data/
+# Raw match payloads (kept locally, never committed)
+/data/2026/group_stage/matches/*.json
+/data/2026/main_event/matches/*.json

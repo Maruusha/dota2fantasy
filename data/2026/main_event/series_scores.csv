@@ -1,0 +1,91 @@
+seriesID,Versus,teamID,teamName,position,games_played,games_counted,series_score
+1132343,BoomBoys vs Iron Wing,8255888,BoomBoys,core,3,2,22652.5
+1132343,BoomBoys vs Iron Wing,8255888,BoomBoys,mid,3,2,21699.99
+1132343,BoomBoys vs Iron Wing,8255888,BoomBoys,support,3,2,19924.46
+1132343,BoomBoys vs Iron Wing,10150413,Iron Wing,core,3,2,19658.84
+1132343,BoomBoys vs Iron Wing,10150413,Iron Wing,mid,3,2,26709.72
+1132343,BoomBoys vs Iron Wing,10150413,Iron Wing,support,3,2,19082.51
+1132647,BoomBoys vs Nigma Galaxy,8255888,BoomBoys,core,3,2,22300.64
+1132647,BoomBoys vs Nigma Galaxy,8255888,BoomBoys,mid,3,2,20253.19
+1132647,BoomBoys vs Nigma Galaxy,8255888,BoomBoys,support,3,2,18360.05
+1132647,BoomBoys vs Nigma Galaxy,10136357,Nigma Galaxy ,core,3,2,19025.01
+1132647,BoomBoys vs Nigma Galaxy,10136357,Nigma Galaxy ,mid,3,2,19186.54
+1132647,BoomBoys vs Nigma Galaxy,10136357,Nigma Galaxy ,support,3,2,19660.24
+1132161,BoomBoys vs TEAM VISION,8255888,BoomBoys,core,3,2,22486.9
+1132161,BoomBoys vs TEAM VISION,8255888,BoomBoys,mid,3,2,33926.17
+1132161,BoomBoys vs TEAM VISION,8255888,BoomBoys,support,3,2,21462.38
+1132161,BoomBoys vs TEAM VISION,9572001,TEAM VISION,core,3,2,27372.94
+1132161,BoomBoys vs TEAM VISION,9572001,TEAM VISION,mid,3,2,24744.05
+1132161,BoomBoys vs TEAM VISION,9572001,TEAM VISION,support,3,2,21377.47
+1132773,BoomBoys vs Team Spirit,8255888,BoomBoys,core,1,1,6801.5
+1132773,BoomBoys vs Team Spirit,8255888,BoomBoys,mid,1,1,7386.0
+1132773,BoomBoys vs Team Spirit,8255888,BoomBoys,support,1,1,7224.67
+1132773,BoomBoys vs Team Spirit,7119388,Team Spirit,core,1,1,11800.16
+1132773,BoomBoys vs Team Spirit,7119388,Team Spirit,mid,1,1,8353.66
+1132773,BoomBoys vs Team Spirit,7119388,Team Spirit,support,1,1,9859.66
+single_8955197224,Iron Wing vs Team Spirit,10150413,Iron Wing,core,1,1,9074.84
+1132142,Iron Wing vs Team Spirit,10150413,Iron Wing,core,1,1,7967.33
+single_8955197224,Iron Wing vs Team Spirit,10150413,Iron Wing,mid,1,1,14562.39
+1132142,Iron Wing vs Team Spirit,10150413,Iron Wing,mid,1,1,7047.66
+single_8955197224,Iron Wing vs Team Spirit,10150413,Iron Wing,support,1,1,10683.93
+1132142,Iron Wing vs Team Spirit,10150413,Iron Wing,support,1,1,8283.33
+single_8955197224,Iron Wing vs Team Spirit,7119388,Team Spirit,core,1,1,14728.67
+1132142,Iron Wing vs Team Spirit,7119388,Team Spirit,core,1,1,11602.53
+single_8955197224,Iron Wing vs Team Spirit,7119388,Team Spirit,mid,1,1,13612.66
+1132142,Iron Wing vs Team Spirit,7119388,Team Spirit,mid,1,1,13022.08
+single_8955197224,Iron Wing vs Team Spirit,7119388,Team Spirit,support,1,1,9257.53
+1132142,Iron Wing vs Team Spirit,7119388,Team Spirit,support,1,1,9819.83
+1132197,Nigma Galaxy vs Team Falcons,10136357,Nigma Galaxy ,core,3,2,21926.33
+1132197,Nigma Galaxy vs Team Falcons,10136357,Nigma Galaxy ,mid,3,2,28738.01
+1132197,Nigma Galaxy vs Team Falcons,10136357,Nigma Galaxy ,support,3,2,21782.28
+1132197,Nigma Galaxy vs Team Falcons,9247354,Team Falcons,core,3,2,21799.42
+1132197,Nigma Galaxy vs Team Falcons,9247354,Team Falcons,mid,3,2,22855.77
+1132197,Nigma Galaxy vs Team Falcons,9247354,Team Falcons,support,3,2,24259.01
+1132426,Nigma Galaxy vs Team Yandex,10136357,Nigma Galaxy ,core,3,2,22646.71
+1132426,Nigma Galaxy vs Team Yandex,10136357,Nigma Galaxy ,mid,3,2,24760.28
+1132426,Nigma Galaxy vs Team Yandex,10136357,Nigma Galaxy ,support,3,2,21767.68
+1132426,Nigma Galaxy vs Team Yandex,9823272,Team Yandex,core,3,2,29462.64
+1132426,Nigma Galaxy vs Team Yandex,9823272,Team Yandex,mid,3,2,28390.83
+1132426,Nigma Galaxy vs Team Yandex,9823272,Team Yandex,support,3,2,26611.18
+1132388,TEAM VISION vs Team Spirit,9572001,TEAM VISION,core,3,2,24962.74
+1133004,TEAM VISION vs Team Spirit,9572001,TEAM VISION,core,5,2,26595.09
+1132388,TEAM VISION vs Team Spirit,9572001,TEAM VISION,mid,3,2,19561.33
+1133004,TEAM VISION vs Team Spirit,9572001,TEAM VISION,mid,5,2,23185.22
+1132388,TEAM VISION vs Team Spirit,9572001,TEAM VISION,support,3,2,21435.52
+1133004,TEAM VISION vs Team Spirit,9572001,TEAM VISION,support,5,2,20228.67
+1132388,TEAM VISION vs Team Spirit,7119388,Team Spirit,core,3,2,17138.69
+1133004,TEAM VISION vs Team Spirit,7119388,Team Spirit,core,5,2,28133.88
+1132388,TEAM VISION vs Team Spirit,7119388,Team Spirit,mid,3,2,16731.83
+1133004,TEAM VISION vs Team Spirit,7119388,Team Spirit,mid,5,2,22279.3
+1132388,TEAM VISION vs Team Spirit,7119388,Team Spirit,support,3,2,14081.24
+1133004,TEAM VISION vs Team Spirit,7119388,Team Spirit,support,5,2,21223.5
+1132678,TEAM VISION vs Team Yandex,9572001,TEAM VISION,core,3,2,28382.3
+1132678,TEAM VISION vs Team Yandex,9572001,TEAM VISION,mid,3,2,21159.44
+1132678,TEAM VISION vs Team Yandex,9572001,TEAM VISION,support,3,2,22648.97
+1132678,TEAM VISION vs Team Yandex,9823272,Team Yandex,core,3,2,22530.84
+1132678,TEAM VISION vs Team Yandex,9823272,Team Yandex,mid,3,2,17808.43
+1132678,TEAM VISION vs Team Yandex,9823272,Team Yandex,support,3,2,18004.35
+1132374,Team Falcons vs Team Liquid,9247354,Team Falcons,core,3,2,22326.37
+1132374,Team Falcons vs Team Liquid,9247354,Team Falcons,mid,3,2,26166.69
+1132374,Team Falcons vs Team Liquid,9247354,Team Falcons,support,3,2,22556.62
+1132374,Team Falcons vs Team Liquid,2163,Team Liquid,core,3,2,21570.98
+1132374,Team Falcons vs Team Liquid,2163,Team Liquid,mid,3,2,19319.82
+1132374,Team Falcons vs Team Liquid,2163,Team Liquid,support,3,2,18857.34
+1132622,Team Liquid vs Team Spirit,2163,Team Liquid,core,2,2,18920.55
+1132622,Team Liquid vs Team Spirit,2163,Team Liquid,mid,2,2,13879.51
+1132622,Team Liquid vs Team Spirit,2163,Team Liquid,support,2,2,18507.77
+1132622,Team Liquid vs Team Spirit,7119388,Team Spirit,core,2,2,25757.99
+1132622,Team Liquid vs Team Spirit,7119388,Team Spirit,mid,2,2,21486.93
+1132622,Team Liquid vs Team Spirit,7119388,Team Spirit,support,2,2,17956.06
+1132178,Team Liquid vs Team Yandex,2163,Team Liquid,core,2,2,15473.29
+1132178,Team Liquid vs Team Yandex,2163,Team Liquid,mid,2,2,22242.07
+1132178,Team Liquid vs Team Yandex,2163,Team Liquid,support,2,2,16557.0
+1132178,Team Liquid vs Team Yandex,9823272,Team Yandex,core,2,2,23347.97
+1132178,Team Liquid vs Team Yandex,9823272,Team Yandex,mid,2,2,18738.15
+1132178,Team Liquid vs Team Yandex,9823272,Team Yandex,support,2,2,21548.01
+1132977,Team Spirit vs Team Yandex,7119388,Team Spirit,core,2,2,21775.25
+1132977,Team Spirit vs Team Yandex,7119388,Team Spirit,mid,2,2,18066.48
+1132977,Team Spirit vs Team Yandex,7119388,Team Spirit,support,2,2,15486.47
+1132977,Team Spirit vs Team Yandex,9823272,Team Yandex,core,2,2,12038.43
+1132977,Team Spirit vs Team Yandex,9823272,Team Yandex,mid,2,2,15094.86
+1132977,Team Spirit vs Team Yandex,9823272,Team Yandex,support,2,2,16032.19
