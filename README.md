@@ -1,5 +1,7 @@
 # Dota 2 Fantasy 2026
 
+Congratulation Team Spirit for winning TI15
+
 This project is forked from bydoodle/dota2fantasy (https://github.com/bydoodle/dota2fantasy)
 
 This repository contains the data processing and statistics pipeline behind the original version of the project. The application was built to collect match data, process player performance and generate additional Fantasy League statistics from just The International 2026 matches.
@@ -26,30 +28,37 @@ The parser uses data from:
 
 - [OpenDota](https://www.opendota.com/)
 
-## Project structure (to-do)
+## Project structure
 
 ```text
 .
-├── main.py
-├── heroes_parser.py
-├── data/heroes.json
-├── leagues.json
-├── players_stat.json
+├── data/
+│   ├── 2026/
+│   │   ├── group_stage/              # Match JSON and generated group-stage CSVs
+│   │   ├── main_event/               # Match JSON and generated main-event CSVs
+│   │   ├── heroes.json
+│   │   ├── hero_types.json
+│   │   ├── leagues.json
+│   │   └── players_stat.json
+│   └── match_existed_id.txt          # IDs already collected by the crawler
+├── dota2parser/                      # React + Vite frontend
+├── notebooks/                        # Group-stage and main-event analyses
+├── results/2026/                     # Generated result summaries
 ├── scripts/
-│   ├── crawl_group_stage_matches.py
-│   ├── group_stage_matches_to_csv.py
-│   └── compute_fantasy_score.py
-├── archive/
-│   ├── generate_heroes_values.py
-│   ├── items_with_active_abilities.py
-│   ├── active_items.json
-│   └── leagues.temp.json
-└── dota2parser/
+│   ├── 1_crawl_matches.py
+│   ├── 2_matches_to_csv.py
+│   ├── 3_compute_fantasy_score.py
+│   ├── 4_compute_series_scores.py
+│   ├── 5_compute_series_stat_scores.py
+│   ├── 6_build_player_stats.py
+│   ├── heroes_parser.py
+│   └── get_leagueid_from_gameid.py
+└── README.md
 ```
 
-### Main scripts (to-do)
+### Main scripts
 
-`scripts/`Collects match data, calculates player statistics and updates the stored datasets.
+The numbered scripts form the data pipeline: collect matches, export match data, calculate fantasy and series scores, then build the player-stat cache used by the frontend.
 
 ## TODO (next year)
 

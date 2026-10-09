@@ -1,11 +1,13 @@
 import requests
 import json
 import time
+from pathlib import Path
 
-filename = 'data/heroes.json'
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+HEROES_PATH = PROJECT_ROOT / 'data' / '2026' / 'heroes.json'
 
 try:
-    with open(filename, 'r', encoding='utf-8') as f:
+    with HEROES_PATH.open('r', encoding='utf-8') as f:
         heroes_info = json.load(f)
 except FileNotFoundError:
     heroes_info = {}
@@ -18,5 +20,5 @@ for hero in heroes:
         'attr': hero['primary_attr']
     }
 
-with open(filename, "w", encoding="utf-8") as f:
+with HEROES_PATH.open("w", encoding="utf-8") as f:
     json.dump(heroes_info, f, ensure_ascii=False, indent=4)

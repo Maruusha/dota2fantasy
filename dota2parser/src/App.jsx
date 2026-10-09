@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import data from './../../players_stat.json';
-import heroes from './../../data/heroes.json';
-import leagues from './../../leagues.json';
-import totalCsvUrl from './../../data/group_stage/total.csv?url';
-import fantasyScoreCsvUrl from './../../data/group_stage/fantasy_score.csv?url';
-import totalCsvRaw from './../../data/group_stage/total.csv?raw';
-import seriesStatScoresRaw from './../../data/group_stage/series_stat_scores.csv?raw';
-import totalCsvUrlMainEvent from './../../data/main_event/total.csv?url';
-import fantasyScoreCsvUrlMainEvent from './../../data/main_event/fantasy_score.csv?url';
-import totalCsvRawMainEvent from './../../data/main_event/total.csv?raw';
+import data from './../../data/2026/players_stat.json';
+import heroes from './../../data/2026/heroes.json';
+import leagues from './../../data/2026/leagues.json';
+import totalCsvUrl from './../../data/2026/group_stage/total.csv?url';
+import fantasyScoreCsvUrl from './../../data/2026/group_stage/fantasy_score.csv?url';
+import totalCsvRaw from './../../data/2026/group_stage/total.csv?raw';
+import seriesStatScoresRaw from './../../data/2026/group_stage/series_stat_scores.csv?raw';
+import totalCsvUrlMainEvent from './../../data/2026/main_event/total.csv?url';
+import fantasyScoreCsvUrlMainEvent from './../../data/2026/main_event/fantasy_score.csv?url';
+import totalCsvRawMainEvent from './../../data/2026/main_event/total.csv?raw';
 import { Select } from '@headlessui/react'
 import './App.css'
 

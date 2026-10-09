@@ -25,6 +25,6 @@ dist-ssr
 .env
 
 docs
-# Generated match payloads (kept locally, never committed)
-/data/group_stage/matches/
-/data/main_event/matches/
+
+# Local tournament data (kept locally, never committed)
+/data/
