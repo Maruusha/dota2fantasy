@@ -1,18 +1,25 @@
 import json
 import glob
-import os
+from pathlib import Path
 
-with open("leagues.json", "r", encoding="utf-8") as f:
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+LEAGUES_PATH = PROJECT_ROOT / "data" / "2026" / "leagues.json"
+HEROES_PATH = PROJECT_ROOT / "data" / "2026" / "heroes.json"
+HERO_TYPES_PATH = PROJECT_ROOT / "data" / "2026" / "hero_types.json"
+MATCHES_DIR = PROJECT_ROOT / "data" / "2026" / "main_event" / "matches"
+PLAYER_STATS_PATH = PROJECT_ROOT / "data" / "2026" / "players_stat.json"
+
+with LEAGUES_PATH.open("r", encoding="utf-8") as f:
     leagues_data = json.load(f)
 
-with open("data/heroes.json", "r", encoding="utf-8") as f:
+with HEROES_PATH.open("r", encoding="utf-8") as f:
     heroes_data = json.load(f)
 
-with open("data/hero_types.json", "r", encoding="utf-8") as f:
+with HERO_TYPES_PATH.open("r", encoding="utf-8") as f:
     hero_types = json.load(f)
 
 try:
-    with open('players_stat.json', 'r', encoding='utf-8') as f:
+    with PLAYER_STATS_PATH.open('r', encoding='utf-8') as f:
         player_stat = json.load(f)
 except FileNotFoundError:
     player_stat = {}
@@ -100,7 +107,7 @@ def addPlayerFields(league_id, player, match_r, pos):
             }
 
 matches_by_league = {league_id: [] for league_id in leagues_ids}
-for filepath in glob.glob(os.path.join("data", "main_event", "matches", "*.json")):
+for filepath in glob.glob(str(MATCHES_DIR / "*.json")):
     with open(filepath, "r", encoding="utf-8") as f:
         cached_match = json.load(f)
     if cached_match.get('leagueid') in matches_by_league:
@@ -182,8 +189,9 @@ for league_id in leagues_ids:
 
     leagues_data[str(league_id)]['total_matches_parsed'] = total_matches_count
 
-with open('players_stat.json', "w", encoding="utf-8") as f:
+PLAYER_STATS_PATH.parent.mkdir(parents=True, exist_ok=True)
+with PLAYER_STATS_PATH.open("w", encoding="utf-8") as f:
     json.dump(player_stat, f, ensure_ascii=False, indent=4)
 
-with open('leagues.json', "w", encoding="utf-8") as f:
+with LEAGUES_PATH.open("w", encoding="utf-8") as f:
     json.dump(leagues_data, f, ensure_ascii=False, indent=4)

@@ -4,12 +4,12 @@ import os
 import time
 # Missing game 2 BoomBoys vs Team Spirit, idk why
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
-MATCHES_DIR = os.path.join(DATA_DIR, "main_event", "matches")
+MATCHES_DIR = os.path.join(DATA_DIR, "2026", "main_event", "matches")
 EXISTING_IDS_FILE = os.path.join(DATA_DIR, "match_existed_id.txt")
 
 os.makedirs(MATCHES_DIR, exist_ok=True)
 
-with open(os.path.join(os.path.dirname(__file__), "..", "leagues.json"), "r", encoding="utf-8") as f:
+with open(os.path.join(os.path.dirname(__file__), "..", "data", "2026", "leagues.json"), "r", encoding="utf-8") as f:
     leagues_data = json.load(f)
 
 league_ids = list(map(int, leagues_data.keys()))

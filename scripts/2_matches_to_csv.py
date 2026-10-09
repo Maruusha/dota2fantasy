@@ -5,13 +5,13 @@ import os
 from datetime import datetime, timezone
 
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
-MATCHES_DIR = os.path.join(ROOT_DIR, "data", "main_event", "matches")
-OUTPUT_FILE = os.path.join(ROOT_DIR, "data", "main_event", "total.csv")
+MATCHES_DIR = os.path.join(ROOT_DIR, "data", "2026", "main_event", "matches")
+OUTPUT_FILE = os.path.join(ROOT_DIR, "data", "2026", "main_event", "total.csv")
 
-with open(os.path.join(ROOT_DIR, "data", "heroes.json"), "r", encoding="utf-8") as f:
+with open(os.path.join(ROOT_DIR, "data", "2026", "heroes.json"), "r", encoding="utf-8") as f:
     heroes_data = json.load(f)
 
-with open(os.path.join(ROOT_DIR, "data", "hero_types.json"), "r", encoding="utf-8") as f:
+with open(os.path.join(ROOT_DIR, "data", "2026", "hero_types.json"), "r", encoding="utf-8") as f:
     hero_types = json.load(f)
 
 # hero name -> set of prefix categories it belongs to (a hero can have several)

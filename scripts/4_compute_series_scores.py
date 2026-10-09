@@ -3,8 +3,8 @@ import os
 from collections import defaultdict
 
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
-INPUT_FILE = os.path.join(ROOT_DIR, "data", "main_event", "total.csv")
-OUTPUT_FILE = os.path.join(ROOT_DIR, "data", "main_event", "series_scores.csv")
+INPUT_FILE = os.path.join(ROOT_DIR, "data", "2026", "main_event", "total.csv")
+OUTPUT_FILE = os.path.join(ROOT_DIR, "data", "2026", "main_event", "series_scores.csv")
 
 STAT_WEIGHTS = {
     "kills": 107,
