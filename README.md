@@ -6,6 +6,37 @@ This project is forked from bydoodle/dota2fantasy (https://github.com/bydoodle/d
 
 This repository contains the data processing and statistics pipeline behind the original version of the project. The application was built to collect match data, process player performance and generate additional Fantasy League statistics from just The International 2026 matches.
 
+## Fantasy stat priorities
+
+These are my findings for choosing fantasy stats, compared with the Reddit recommendations. Rankings are approximate: `>` means preferred, and `>>` indicates a larger gap. FB means first blood.
+
+| Role | Color | My findings |
+| --- | --- | --- |
+| Core | Red | Creeps > GPM >> Deaths > Towers / Kills >>> Madstones |
+| Core | Green | Teamfight (very stable) >> Stuns (depends on hero picks) > Roshan > FB (risky) > Tormentor / Courier kills |
+| Mid | Red | Creeps > GPM > Deaths (stable) > Kills >> Madstones > Towers |
+| Mid | Green | Teamfight >> Stuns > FB (risky) > Roshan (long games) > Tormentor >> Courier kills |
+| Mid | Blue | Runes >>> Camps / Lotuses (uncertain) > Watchers (stat uncertain) >>> Everything else |
+| Support | Green | Teamfight >>> Stuns >> Everything else |
+| Support | Blue | Camps > Wards / Smokes > Lotuses / Watchers >> Runes |
+
+For mid red stats, kills may be better in theory, but the observed statistics favored deaths. For support blue stats, camps were great and wards / smokes were good; lotuses and watchers might also be viable.
+
+<details>
+<summary>Reddit recommendations</summary>
+
+| Role | Color | Priority |
+| --- | --- | --- |
+| Core | Red | Creeps >> GPM > Deaths (stable) / Towers (risky) > Kills > Madstones |
+| Core | Green | Roshan > Teamfight > Tormentor >>> Stuns >>> Courier kills / FB |
+| Mid | Red | Creeps > GPM > Deaths (stable) / Kills (risky) >> Madstones > Towers |
+| Mid | Green | Teamfight > Stuns (stable) / Tormentor (risky) >>> Roshan >>> Courier kills / FB |
+| Mid | Blue | Runes >>> Camps / Lotuses >>> Everything else |
+| Support | Green | Teamfight > Tormentor > Courier kills > Stuns >>> FB / Roshan |
+| Support | Blue | Wards / Smokes > Lotuses / Camps >> Watchers >>> Runes |
+
+</details>
+
 ## ✦ Current version
 
 The original project is from 2025. I disagree with some processing pipeline, so i decide to rewrite that logic and keep only the React + Vite part with few modifications.
