@@ -6,34 +6,30 @@ This project is forked from bydoodle/dota2fantasy (https://github.com/bydoodle/d
 
 This repository contains the data processing and statistics pipeline behind the original version of the project. The application was built to collect match data, process player performance and generate additional Fantasy League statistics from just The International 2026 matches.
 
+## Result
+
+![2026 fantasy result: 27,430 points and 99th percentile](final-ranking/2026-ranking.png)This year I came close to the top 1,500 and the full rewards. My 99th-percentile finish was an improvement over last year's 95th percentile, even though there were more guides online and more player interest, making this year tougher.
+
 ## Fantasy stat priorities
 
 These are my findings for choosing fantasy stats, compared with the Reddit recommendations. Rankings are approximate: `>` means preferred, and `>>` indicates a larger gap. FB means first blood.
 
 | Role | Color | My findings |
 | --- | --- | --- |
-| Core | Red | Creeps > GPM >> Deaths > Towers / Kills >>> Madstones |
-| Core | Green | Teamfight (very stable) >> Stuns (depends on hero picks) > Roshan > FB (risky) > Tormentor / Courier kills |
-| Mid | Red | Creeps > GPM > Deaths (stable) > Kills >> Madstones > Towers |
-| Mid | Green | Teamfight >> Stuns > FB (risky) > Roshan (long games) > Tormentor >> Courier kills |
-| Mid | Blue | Runes >>> Camps / Lotuses (uncertain) > Watchers (stat uncertain) >>> Everything else |
-| Support | Green | Teamfight >>> Stuns >> Everything else |
-| Support | Blue | Camps > Wards / Smokes > Lotuses / Watchers >> Runes |
+| Core | Red | Creeps &gt; GPM &gt;&gt; Deaths &gt; Towers / Kills &gt;&gt;&gt; Madstones |
+| Core | Green | Teamfight (very stable) &gt;&gt; Stuns (depends on hero picks) &gt; Roshan &gt; FB (risky) &gt; Tormentor / Courier kills |
+| Mid | Red | Creeps &gt; GPM &gt; Deaths (stable) &gt; Kills &gt;&gt; Madstones &gt; Towers |
+| Mid | Green | Teamfight &gt;&gt; Stuns &gt; FB (risky) &gt; Roshan (long games) &gt; Tormentor &gt;&gt; Courier kills |
+| Mid | Blue | Runes &gt;&gt;&gt; Camps / Lotuses (uncertain) &gt; Watchers (stat uncertain) &gt;&gt;&gt; Everything else |
+| Support | Green | Teamfight &gt;&gt;&gt; Stuns &gt;&gt; Everything else |
+| Support | Blue | Camps &gt; Wards / Smokes &gt; Lotuses / Watchers &gt;&gt; Runes |
 
 For mid red stats, kills may be better in theory, but the observed statistics favored deaths. For support blue stats, camps were great and wards / smokes were good; lotuses and watchers might also be viable.
 
 <details>
 <summary>Reddit recommendations</summary>
 
-| Role | Color | Priority |
-| --- | --- | --- |
-| Core | Red | Creeps >> GPM > Deaths (stable) / Towers (risky) > Kills > Madstones |
-| Core | Green | Roshan > Teamfight > Tormentor >>> Stuns >>> Courier kills / FB |
-| Mid | Red | Creeps > GPM > Deaths (stable) / Kills (risky) >> Madstones > Towers |
-| Mid | Green | Teamfight > Stuns (stable) / Tormentor (risky) >>> Roshan >>> Courier kills / FB |
-| Mid | Blue | Runes >>> Camps / Lotuses >>> Everything else |
-| Support | Green | Teamfight > Tormentor > Courier kills > Stuns >>> FB / Roshan |
-| Support | Blue | Wards / Smokes > Lotuses / Camps >> Watchers >>> Runes |
+RoleColorPriorityCoreRedCreeps >> GPM > Deaths (stable) / Towers (risky) > Kills > MadstonesCoreGreenRoshan > Teamfight > Tormentor >>> Stuns >>> Courier kills / FBMidRedCreeps > GPM > Deaths (stable) / Kills (risky) >> Madstones > TowersMidGreenTeamfight > Stuns (stable) / Tormentor (risky) >>> Roshan >>> Courier kills / FBMidBlueRunes >>> Camps / Lotuses >>> Everything elseSupportGreenTeamfight > Tormentor > Courier kills > Stuns >>> FB / RoshanSupportBlueWards / Smokes > Lotuses / Camps >> Watchers >>> Runes
 
 </details>
 
@@ -109,4 +105,5 @@ Analyze/Visualize data to notebook - todo
 
 update UI - todo
 
+conclusion of this year - todo
 conclusion of this year - todo
